@@ -55,7 +55,42 @@ button, input, a {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+@font-face {
+    font-family: 'pfdindisplaypro-reg';
+    src: url('../fonts/pfdindisplaypro-reg.eot');
+    src: url('../fonts/pfdindisplaypro-reg.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pfdindisplaypro-reg.woff') format('woff'),
+    url('../fonts/pfdindisplaypro-reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pfdindisplaypro-bold';
+    src: url('../fonts/pfdindisplaypro-bold.eot');
+    src: url('../fonts/pfdindisplaypro-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pfdindisplaypro-bold.woff') format('woff'),
+    url('../fonts/pfdindisplaypro-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pfdindisplaypro-light';
+    src: url('../fonts/pfdindisplaypro-light.eot');
+    src: url('../fonts/pfdindisplaypro-light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pfdindisplaypro-light.woff') format('woff'),
+    url('../fonts/pfdindisplaypro-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pfdindisplaypro-med';
+    src: url('../fonts/pfdindisplaypro-med.eot');
+    src: url('../fonts/pfdindisplaypro-med.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pfdindisplaypro-med.woff') format('woff'),
+    url('../fonts/pfdindisplaypro-med.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
