@@ -134,13 +134,55 @@ button, input, a {
             float: left;
             font: 22px 'DinDisplayPro-med';
         }
-            .box-tell span {
-                color: #6f6f6f;
+            .box-tell li {
+                padding-left: 25px;
+                margin-bottom: 3px;
             }
+            .box-tell .tell-1 {
+                background: url("../images/header/tell_sprite.png") no-repeat 0 7px;
+            }
+            .box-tell .tell-2 {
+                background: url("../images/header/tell_sprite.png") no-repeat 0 -27px;
+            }
+                .box-tell span {
+                    color: #6f6f6f;
+                }
         .credit-box {
             float: right;
             text-align: left;
         }
+            .credit-box ul {
+                float: left;
+            }
+            .credit-box .text {
+                margin-top: 3px;
+            }
+                .credit-box .first {
+                    padding-left: 23px;
+                    margin-bottom: 13px;
+                    color: #6f6f6f;
+                    background: url("../images/header/credit_icon.png") no-repeat 0 3px;
+                }
+                .credit-box .second {
+                    padding-left: 23px;
+                    color: #005f87;
+                    background: url("../images/header/credit_icon.png") no-repeat 0 -34px;
+                }
+            .box-cards-foto {
+                overflow: hidden;
+                width: 91px;
+                margin-left: 15px;
+            }
+                .box-cards-foto li {
+                    float: left;
+                    margin-bottom: 5px;
+                }
+                .box-cards-foto li:nth-child(2n) {
+                    float: right;
+                }
+                    .box-cards-foto li img {
+                        display: block;
+                    }
         .call-back-box {
             display: inline-block;
             text-align: left;
