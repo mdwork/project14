@@ -2,12 +2,13 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:14px Arial, Serif;; background:#fff; color:#212121; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
 	padding:0;
 	margin:0;
 	outline:none;
 	list-style:none;
+    line-height: 1.45;
 }
 select, input, textarea        { font-size:12px; vertical-align:middle; }
 textarea                       { vertical-align:top; }
@@ -45,57 +46,66 @@ button, input, a {
 	transition: all .5s;
 }
 .content {
+    width: 842px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 100%;
-	max-width: 980px;
-	margin: 0 auto;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 @font-face {
-    font-family: 'pfdindisplaypro-reg';
-    src: url('../fonts/pfdindisplaypro-reg.eot');
-    src: url('../fonts/pfdindisplaypro-reg.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/pfdindisplaypro-reg.woff') format('woff'),
-    url('../fonts/pfdindisplaypro-reg.ttf') format('truetype');
+    font-family: 'DinDisplayPro-reg';
+    src: url('../fonts/DinDisplayPro-reg.eot');
+    src: url('../fonts/DinDisplayPro-reg.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DinDisplayPro-reg.woff') format('woff'),
+    url('../fonts/DinDisplayPro-reg.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'pfdindisplaypro-bold';
-    src: url('../fonts/pfdindisplaypro-bold.eot');
-    src: url('../fonts/pfdindisplaypro-bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/pfdindisplaypro-bold.woff') format('woff'),
-    url('../fonts/pfdindisplaypro-bold.ttf') format('truetype');
+    font-family: 'DinDisplayPro-bold';
+    src: url('../fonts/DinDisplayPro-bold.eot');
+    src: url('../fonts/DinDisplayPro-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DinDisplayPro-bold.woff') format('woff'),
+    url('../fonts/DinDisplayPro-bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'pfdindisplaypro-light';
-    src: url('../fonts/pfdindisplaypro-light.eot');
-    src: url('../fonts/pfdindisplaypro-light.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/pfdindisplaypro-light.woff') format('woff'),
-    url('../fonts/pfdindisplaypro-light.ttf') format('truetype');
+    font-family: 'DinDisplayPro-light';
+    src: url('../fonts/DinDisplayPro-light.eot');
+    src: url('../fonts/DinDisplayPro-light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DinDisplayPro-light.woff') format('woff'),
+    url('../fonts/DinDisplayPro-light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'pfdindisplaypro-med';
-    src: url('../fonts/pfdindisplaypro-med.eot');
-    src: url('../fonts/pfdindisplaypro-med.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/pfdindisplaypro-med.woff') format('woff'),
-    url('../fonts/pfdindisplaypro-med.ttf') format('truetype');
+    font-family: 'DinDisplayPro-med';
+    src: url('../fonts/DinDisplayPro-med.eot');
+    src: url('../fonts/DinDisplayPro-med.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DinDisplayPro-med.woff') format('woff'),
+    url('../fonts/DinDisplayPro-med.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.bg-main-blue {
+    background: url("../images/bg_main_blue.jpg") #1775A6 no-repeat top center;
+}
 .wrapper {
+    width: 1200px;
     min-height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: url("../images/header/bg_header_top.jpg") #fff no-repeat top center;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
     .wrapper:after {
         content: '';
@@ -106,7 +116,35 @@ button, input, a {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.header {
+    overflow: hidden;
+    padding: 20px 0;
+    font: 16px 'DinDisplayPro-reg';
+}
+    .main-logo {
+        float: left;
+    }
+    .header .content {
+        overflow: hidden;
+        float: right;
+        margin-top: 25px;
+        text-align: center;
+    }
+        .box-tell {
+            float: left;
+            font: 22px 'DinDisplayPro-med';
+        }
+            .box-tell span {
+                color: #6f6f6f;
+            }
+        .credit-box {
+            float: right;
+            text-align: left;
+        }
+        .call-back-box {
+            display: inline-block;
+            text-align: left;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
