@@ -109,7 +109,7 @@ button, input, a {
     min-height: 100%;
     margin: 0 auto;
     padding: 0 20px;
-    background: url("../images/header/bg_header_top.jpg") #fff no-repeat top center;
+    background: url("../images/header/bg_header_top.jpg") #fff repeat-x top left;
 
     -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
