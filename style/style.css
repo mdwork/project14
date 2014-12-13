@@ -439,6 +439,45 @@ button, input, a {
     .about-company .header-section {
         margin-bottom: 20px;
     }
+
+    .box-workers {
+        overflow: hidden;
+    }
+        .header-workers {
+            padding: 8px 0 9px;
+            background: #EDEBEA;
+            border-left: 7px solid #4C3F35;
+        }
+            .header-workers h2 {
+                margin-left: 12px;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        .list-name-workers {
+            overflow: hidden;
+            font-size: 14px;
+        }
+            .list-name-workers dt {
+                display: inline-block;
+                font-weight: bold;
+            }
+            .list-name-workers dd {
+                display: inline-block;
+            }
+        .list-workers-foto {
+            overflow: hidden;
+        }
+            .list-workers-foto li {
+                float: left;
+                width: 194px;
+                margin: 0 0 20px 19px;
+                border: 1px solid #DCE5E7;
+                text-align: center;
+            }
+            .list-workers-foto li:first-child,
+            .list-workers-foto li:nth-child(5n) {
+                margin-left: 0;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
