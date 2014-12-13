@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:14px Arial, Serif; background:#fff; color:#212121; }
+body                            { padding:0; margin:0; font:14px Arial, Serif; background:url("../images/bg_main.png") no-repeat top center; color:#212121; }
 div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
 	padding:0;
 	margin:0;
@@ -97,10 +97,7 @@ button, input, a {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.bg-main {
-    background: url("../images/bg_main.png") no-repeat top center;
-}
-.bg-main-blue {
+.home-blue {
     background: url("../images/bg_main_blue.jpg") #1775A6 no-repeat top center;
 }
 .wrapper {
@@ -685,6 +682,41 @@ button, input, a {
                 .list-service-footer a:hover {
                     text-decoration: underline;
                 }
+/*---------------------------------BREAD-CRUMBS-------------------------------------*/
+.bread-crumbs {
+    overflow: hidden;
+    margin-bottom: 15px;
+    background: #F4FAFD;
+    font-size: 13px;
+    color: #6f6f6f;
+}
+    .bread-crumbs li {
+        position: relative;
+        float: left;
+        margin-right: 18px;
+        line-height: 25px;
+    }
+        .bread-crumbs li:before {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: -12px;
+            width: 6px;
+            height: 12px;
+            background: url("../images/content/bread_crumbs_arrow.png") no-repeat center;
+        }
+        .bread-crumbs li:first-child:before {
+            display: none;
+        }
+        .bread-crumbs a {
+            position: relative;
+            text-decoration: none;
+            font-size: 13px;
+            color: #005f87;
+        }
+        .bread-crumbs a:hover {
+            text-decoration: underline;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
