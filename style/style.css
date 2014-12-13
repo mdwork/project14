@@ -58,8 +58,9 @@ button, input, a {
     font-family: 'DinDisplayPro-reg';
     src: url('../fonts/DinDisplayPro-reg.eot');
     src: url('../fonts/DinDisplayPro-reg.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DinDisplayPro-reg.woff') format('woff'),
-    url('../fonts/DinDisplayPro-reg.ttf') format('truetype');
+         url('../fonts/DinDisplayPro-reg.woff') format('woff'),
+         url('../fonts/DinDisplayPro-reg.ttf') format('truetype'),
+         url('../fonts/DinDisplayPro-reg.svg#pf_dindisplay_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -67,8 +68,9 @@ button, input, a {
     font-family: 'DinDisplayPro-bold';
     src: url('../fonts/DinDisplayPro-bold.eot');
     src: url('../fonts/DinDisplayPro-bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DinDisplayPro-bold.woff') format('woff'),
-    url('../fonts/DinDisplayPro-bold.ttf') format('truetype');
+         url('../fonts/DinDisplayPro-bold.woff') format('woff'),
+         url('../fonts/DinDisplayPro-bold.ttf') format('truetype'),
+         url('../fonts/DinDisplayPro-bold.svg#pf_dindisplay_probold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -76,8 +78,9 @@ button, input, a {
     font-family: 'DinDisplayPro-light';
     src: url('../fonts/DinDisplayPro-light.eot');
     src: url('../fonts/DinDisplayPro-light.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DinDisplayPro-light.woff') format('woff'),
-    url('../fonts/DinDisplayPro-light.ttf') format('truetype');
+         url('../fonts/DinDisplayPro-light.woff') format('woff'),
+         url('../fonts/DinDisplayPro-light.ttf') format('truetype'),
+         url('../fonts/DinDisplayPro-light.svg#pf_dindisplay_prolight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -85,8 +88,9 @@ button, input, a {
     font-family: 'DinDisplayPro-med';
     src: url('../fonts/DinDisplayPro-med.eot');
     src: url('../fonts/DinDisplayPro-med.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DinDisplayPro-med.woff') format('woff'),
-    url('../fonts/DinDisplayPro-med.ttf') format('truetype');
+         url('../fonts/DinDisplayPro-med.woff') format('woff'),
+         url('../fonts/DinDisplayPro-med.ttf') format('truetype'),
+         url('../fonts/DinDisplayPro-med.svg#pf_dindisplay_promedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -97,6 +101,7 @@ button, input, a {
     background: url("../images/bg_main_blue.jpg") #1775A6 no-repeat top center;
 }
 .wrapper {
+    overflow: hidden;
     width: 1200px;
     min-height: 100%;
     margin: 0 auto;
@@ -119,10 +124,13 @@ button, input, a {
 .header {
     overflow: hidden;
     padding: 20px 0 10px;
-    font: 16px 'DinDisplayPro-reg';
+    font: 16px 'DinDisplayPro-reg', sans-serif;
 }
     .main-logo {
         float: left;
+        overflow: hidden;
+        width: 256px;
+        height: 85px;
     }
     .header .content {
         overflow: hidden;
@@ -132,7 +140,7 @@ button, input, a {
     }
         .box-tell {
             float: left;
-            font: 22px 'DinDisplayPro-med';
+            font: 22px 'DinDisplayPro-med', sans-serif;
         }
             .box-tell li {
                 margin-bottom: 3px;
@@ -151,7 +159,7 @@ button, input, a {
         .credit-box {
             float: right;
             color: #6f6f6f;
-            font: 16px 'DinDisplayPro-reg';
+            font: 16px 'DinDisplayPro-reg', sans-serif;
             text-align: left;
         }
             .credit-box ul {
@@ -227,14 +235,87 @@ button, input, a {
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .bg-side-bar {
+    overflow: hidden;
     background: #F4FAFD;
 }
 .side-bar {
     float: left;
     width: 290px;
-    height: 50px;
     background: #F4FAFD;
 }
+    .side-bar section {
+        margin-bottom: 15px;
+    }
+        .header-section-side-bar h2 {
+            padding: 0 20px;
+            margin-bottom: 10px;
+            background: #DCE5E7;
+            font: 400 24px 'DinDisplayPro-reg', sans-serif;
+            line-height: 43px;
+        }
+        .content-side-bar {
+            padding: 0 20px 20px;
+        }
+            .content-side-bar ul {
+                margin-bottom: 16px;
+            }
+                .content-side-bar li {
+                    position: relative;
+                    padding: 14px 0 0;
+                }
+                .content-side-bar.bord-bot li {
+                    border-bottom: 1px solid #D3DCE6;
+                }
+                    .date {
+                        display: inline-block;
+                        margin-bottom: 10px;
+                        font: 400 13px 'DinDisplayPro-reg', sans-serif;
+                        color: #6f6f6f;
+                    }
+                    .content-side-bar p {
+                        margin-bottom: 16px;
+                        line-height: 18px;
+                    }
+                        .content-side-bar p a {
+                            font-size: 14px;
+                            color: #005f87;
+                        }
+                    .descr-box {
+                        position: absolute;
+                        z-index: 1;
+                        bottom: 13px;
+                        text-align: right;
+                        font: 400 18px 'DinDisplayPro-reg', sans-serif;
+                        color: #f7f7f7;
+                    }
+                        a.description {
+                            display: inline-block;
+                            float: right;
+                            margin-bottom: 12px;
+                            padding: 7px 22px 9px 12px;
+                            background: rgba(0, 0, 0, 0.6);
+                            line-height: 20px;
+                            cursor: pointer;
+                        }
+                        .size {
+                            padding-right: 22px;
+                        }
+        a.link-folder {
+            position: relative;
+            display: inline-block;
+            padding-left: 25px;
+            font-size: 14px;
+            color: #005f87;
+        }
+            .link-folder:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: -1px;
+                width: 16px;
+                height: 15px;
+                background: url("../images/sideBar/folder.png") no-repeat center;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -274,7 +355,7 @@ button, input, a {
                 .main-nav a {
                     display: block;
                     padding: 15px 0 16px;
-                    font: 15px 'DinDisplayPro-med';
+                    font: 15px 'DinDisplayPro-med', sans-serif;
                     background: #226E9A;
                     color: #fff;
                     text-decoration: none;
@@ -302,12 +383,12 @@ button, input, a {
                 -moz-box-sizing: border-box;
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-                background: url("../images/content/slider/bg_text_slider.png") no-repeat;
+                background: url("../images/content/slider/bg_text_slider.png") no-repeat center;
             }
                 .box-slider .block-text h3 {
                     margin-bottom: 10px;
                     color: #104773;
-                    font: 24px 'DinDisplayPro-bold';
+                    font: 24px 'DinDisplayPro-bold', sans-serif;
                 }
                 .box-slider .block-text p {
                     font-size: 14px;
@@ -322,7 +403,7 @@ button, input, a {
             border-bottom: 2px solid #DCE5E7;
         }
             .header-section h2 {
-                font: 30px 'DinDisplayPro-reg';
+                font: 30px 'DinDisplayPro-reg', sans-serif;
             }
         .sub-header {
             margin-bottom: 10px;
@@ -408,7 +489,7 @@ button, input, a {
                     width: 100%;
                     padding: 9px 0;
                     text-align: center;
-                    font: 22px 'DinDisplayPro-med';
+                    font: 22px 'DinDisplayPro-med', sans-serif;
                     color: #fff;
                     background: #000;
 
@@ -493,6 +574,9 @@ button, input, a {
         float: left;
     }
         .footer-logo {
+            overflow: hidden;
+            width: 204px;
+            height: 68px;
             margin-bottom: 15px;
         }
             .footer-logo a,
@@ -548,7 +632,7 @@ button, input, a {
                     color: #005f87;
                     text-transform: uppercase;
                     text-decoration: none;
-                    font: 14px 'DinDisplayPro-med';
+                    font: 14px 'DinDisplayPro-med', sans-serif;
                 }
                 .nav-footer a:hover {
                     text-decoration: underline;
@@ -573,7 +657,7 @@ button, input, a {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-@media screen and(min-width: 1900px) {
+@media screen and (min-width: 1900px) {
     .bg-main-blue {
         background-size: 100% 100%;
     }
@@ -618,10 +702,10 @@ button, input, a {
     border-bottom-right-radius: 5px;
 }
 #slides .slidesNext:hover {
-    background-image: url(../images/content/slider/next_hover.png)
+    background-image: url(../images/content/slider/next_hover.png);
 }
 #slides .slidesPrevious:hover {
-    background-image: url(../images/content/slider/prev_hover.png)
+    background-image: url(../images/content/slider/prev_hover.png);
 }
 .slidesPagination {
     position: absolute;
