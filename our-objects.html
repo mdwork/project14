@@ -256,22 +256,5 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/slides.js"></script>
-    <script>
-        $(function(){
-            $("#slides").slides({
-
-                loaded: function(){
-                    currentSlide( 1 );
-                },
-                playInterval: 10000,
-                width: 842,
-                height: 292
-            });
-            setTimeout(function(){
-                $("#slides").slides("play");
-            }, 5000)
-        });
-    </script>
 </body>
 </html>
