@@ -769,8 +769,13 @@ button, input, a {
     }
 }
 
-/*slider*/
+/*map*/
+.map {
+    height: 575px;
+    margin-bottom: 33px;
+}
 
+/*slider*/
 #slides {
     position:relative;
 }
