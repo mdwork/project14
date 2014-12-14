@@ -239,7 +239,6 @@ button, input, a {
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .bg-side-bar {
-    overflow: hidden;
     background: #F4FAFD;
 }
 .side-bar {
@@ -587,6 +586,44 @@ button, input, a {
                     display: inline-block;
                     width: 150px;
                 }
+    .list-reviews {
+
+    }
+        .list-reviews li {
+            padding: 20px 19px 12px;
+            margin-bottom: 20px;
+            background: #F4FAFD;
+            border: 1px solid #DCE5E7;
+            font-size: 16px;
+        }
+            .list-reviews .wrap-foto {
+                position: relative;
+                display: block;
+                margin-bottom: 15px;
+            }
+                .list-reviews .wrap-foto img {
+                    display: block;
+                    width: 804px;
+                    height: 166px;
+                }
+                .list-reviews .wrap-foto .link {
+                    display: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 170px;
+                    margin: -24px 0 0 -85px;
+                    padding: 13px 0;
+                    background: #DCE5E7;
+                    text-align: center;
+                }
+                .list-reviews .wrap-foto:hover .link {
+                    display: block;
+                }
+        .list-reviews dd,
+        .list-reviews dt {
+            display: inline-block;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
