@@ -840,6 +840,84 @@ a:hover                        { text-decoration:underline; }
             .table-service td:nth-child(5n + 2) {
                 text-align: left;
             }
+    .list-work-performed {
+        margin: 0 0 40px 15px;
+    }
+        .list-work-performed li {
+            margin-bottom: 3px;
+            text-indent: 5px;
+            list-style-image: url("../images/content/icon_list.png");
+        }
+            .list-work-performed  li a {
+                font-size: 18px;
+                text-decoration: none;
+                border-bottom: 1px solid #005f87;;
+            }
+            .list-work-performed  li a:hover {
+                border: none;
+            }
+    .btn-icon,
+    .btn-icon:hover {
+        margin-bottom: 40px;
+        padding-left: 55px;
+        background-image: url("../images/content/check_icon.png");
+        background-repeat: no-repeat;
+        background-position: 13px 7px;
+    }
+    .list-benefits {
+        margin-bottom: 75px;
+    }
+        .list-benefits li {
+            overflow: hidden;
+            margin-top: 20px;
+            border: 2px solid #000;
+        }
+        .list-benefits li:first-child {
+            margin-top: 0;
+        }
+        .list-benefits .first {
+            border-color: #1C599B;
+        }
+            .list-benefits li:before {
+                content: '';
+                float: left;
+                width: 50px;
+                height: 66px;
+                margin-right: 15px;
+                background: url("../images/content/benefits1.png") no-repeat center #1C599B;
+            }
+        .list-benefits .attention {
+            border-color: #6CA127;
+        }
+            .list-benefits .attention:before {
+                background: url("../images/content/benefits2.png") no-repeat center #6CA127;
+            }
+        .list-benefits .warning {
+            border-color: #E30000;
+        }
+            .list-benefits .warning:before {
+                background: url("../images/content/benefits3.png") no-repeat center #E30000;
+            }
+            .list-benefits li p {
+                margin: 13px 15px 13px 0;
+                text-indent: 0;
+            }
+    .list-fotoalbom {
+        overflow: hidden;
+    }
+        .list-fotoalbom li {
+            float: left;
+            width: 260px;
+            margin: 0 30px 20px 0;
+            text-align: center;
+        }
+        .list-fotoalbom li:nth-child(3n) {
+            margin-right: 0;
+        }
+            .list-fotoalbom li img {
+                display: inline-block;
+                vertical-align: top;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
