@@ -415,6 +415,7 @@ a:hover                        { text-decoration:underline; }
             padding-bottom: 5px;
             border-bottom: 2px solid #DCE5E7;
         }
+            .header-section h1,
             .header-section h2 {
                 font: 30px 'DinDisplayPro-reg', sans-serif;
             }
@@ -841,13 +842,11 @@ a:hover                        { text-decoration:underline; }
             position: relative;
             text-decoration: none;
             font-size: 13px;
-            color: #6f6f6f;
-        }
-        .bread-crumbs li:first-child a {
             color: #005f87;
         }
         .bread-crumbs li:last-child a {
             pointer-events: none;
+            color: #6f6f6f;
         }
         .bread-crumbs a:hover {
             text-decoration: underline;
