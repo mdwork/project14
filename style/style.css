@@ -644,6 +644,7 @@ a:hover                        { text-decoration:underline; }
     .box-main-form {
         float: right;
         width: 508px;
+        margin-top: 20px;
         background: #F4FAFD;
         border: 1px solid #E0E9EB;
     }
@@ -709,6 +710,11 @@ a:hover                        { text-decoration:underline; }
                 font-size: 13px;
                 color: #6f6f6f;
                 text-align: left;
+            }
+            .form .btn {
+                width: 122px;
+                height: 36px;
+                font-size: 17px;
             }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
