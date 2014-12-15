@@ -16,7 +16,7 @@ textarea                       { vertical-align:top; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Arial, Serif; color:#000; text-decoration:none; }
+a:link, a:visited              { font:14px Arial, Serif; color:#005f87; text-decoration:none; }
 a:hover                        { text-decoration:underline; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -250,11 +250,10 @@ a:hover                        { text-decoration:underline; }
         margin-bottom: 15px;
     }
         .header-section-side-bar h2 {
-            padding: 0 20px;
-            margin-bottom: 10px;
+            padding: 8px 20px;
+            margin-bottom: 30px;
             background: #DCE5E7;
             font: 400 24px 'DinDisplayPro-reg', sans-serif;
-            line-height: 43px;
         }
         .content-side-bar {
             padding: 0 20px 20px;
@@ -262,13 +261,16 @@ a:hover                        { text-decoration:underline; }
             .content-side-bar ul {
                 margin-bottom: 16px;
             }
-                .content-side-bar li {
+                .list-box-action li {
                     position: relative;
-                    padding: 14px 0 0;
+                    margin-bottom: 20px;
                 }
                 .content-side-bar.bord-bot li {
                     border-bottom: 1px solid #D3DCE6;
                 }
+                    .content-side-bar li img {
+                        display: block;
+                    }
                     .date {
                         display: inline-block;
                         margin-bottom: 10px;
@@ -319,6 +321,12 @@ a:hover                        { text-decoration:underline; }
                 height: 15px;
                 background: url("../images/sideBar/folder.png") no-repeat center;
             }
+        .dogovor-box .foto {
+            display: block;
+            width: 250px;
+            height: 195px;
+            margin: 0 auto 15px;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
