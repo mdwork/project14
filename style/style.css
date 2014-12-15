@@ -902,21 +902,50 @@ a:hover                        { text-decoration:underline; }
                 margin: 13px 15px 13px 0;
                 text-indent: 0;
             }
-    .list-fotoalbom {
+    .list-fotoalbom,
+    .list-video {
         overflow: hidden;
+        position: relative;
     }
-        .list-fotoalbom li {
+        .list-fotoalbom li,
+        .list-video li {
+            position: relative;
             float: left;
             width: 260px;
             margin: 0 30px 20px 0;
             text-align: center;
+            background: #F4FAFD;
         }
-        .list-fotoalbom li:nth-child(3n) {
+        .list-fotoalbom li:nth-child(3n),
+        .list-video li:nth-child(3n) {
             margin-right: 0;
         }
-            .list-fotoalbom li img {
+            .list-fotoalbom li img,
+            .list-video li img {
                 display: inline-block;
                 vertical-align: top;
+                cursor: pointer;
+            }
+            .list-fotoalbom li img:hover,
+            .list-video li img:hover,
+            .list-video .icon-play:hover + img {
+                opacity: 0.8;
+            }
+            .list-video .icon-play {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 5;
+                margin: -24px 0 0 -29px;
+                display: block;
+                width: 58px;
+                height: 48px;
+                background: url("../images/content/Video/play_icon.png") center no-repeat #e97c22;
+                cursor: pointer;
+
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
             }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
