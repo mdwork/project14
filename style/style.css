@@ -942,6 +942,7 @@ a:hover                        { text-decoration:underline; }
                 height: 48px;
                 background: url("../images/content/Video/play_icon.png") center no-repeat #e97c22;
                 cursor: pointer;
+                text-indent: -9999px;
 
                 -webkit-border-radius: 4px;
                 -moz-border-radius: 4px;
