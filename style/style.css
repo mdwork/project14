@@ -989,60 +989,90 @@ a:hover                        { text-decoration:underline; }
     .list-service-sidebar {
         background: #EDEBEA;
     }
+        .list-service-sidebar .wrap-category-service {
+            padding-bottom: 25px;
+        }
         .list-service-sidebar .content-side-bar {
             padding-bottom: 0;
         }
-        .header-service {
-            padding: 9px 0 9px 43px;
-            margin-bottom: 30px;
-            font: 20px 'DinDisplayPro-reg';
-            color: #fff;
-        }
-        .drilling .header-service {
-            background: #4C3F35;
-        }
-            .link-toggle {
-                position: relative;
+            .header-service a {
                 display: block;
-                padding: 9px 0 9px 20px;
-                margin-bottom: 6px;
-                background: #fff;
+                padding: 9px 0 9px 43px;
+                font: 20px 'DinDisplayPro-reg';
+                color: #fff;
             }
-                .link-toggle:before {
-                    content: '';
-                    position: absolute;
-                    top: 10px;
-                    left: 5px;
-                    display: inline-block;
-                    width: 0;
-                    height: 0;
-                    margin-right: 5px;
-                    border-top: 6px solid transparent;
-                    border-left: 6px solid #4C3F35;
-                    border-bottom: 6px solid transparent;
-                    border-right: 0;
+            .header-service a:hover {
+                text-decoration: none;
+            }
+        li.active .header-service {
+            margin-bottom: 30px;
+        }
+            li.active .header-service a {
+                pointer-events: none;
+            }
+        .list-service-sidebar li.active {
+            padding-bottom: 25px;
+        }
+            .drilling .header-service {
+                background: #4C3F35;
+            }
+            .water-supply .header-service {
+                background: #1C599B;
+            }
+            .heating .header-service {
+                background: #ED6E07;
+            }
+            .sewerage .header-service {
+                background: #6CA127;
+            }
+            .electrics .header-service {
+                background: #F2CD00;
+            }
+            .water-treatment .header-service {
+                background: #62CCF6;
+            }
+                .link-toggle {
+                    position: relative;
+                    display: block;
+                    padding: 9px 0 9px 20px;
+                    margin-bottom: 6px;
+                    background: #fff;
                 }
-                .drilling .link-toggle:before {
-                    border-left: 6px solid #4C3F35;
-                }
-                .link-toggle.active:before {
-                    top: 14px;
-                    width: 0;
-                    height: 0;
-                    border-left: 6px solid transparent;
-                    border-right: 6px solid transparent;
-                    border-top: 6px solid red;
-                    border-bottom: 0;
-                }
-                .drilling .link-toggle.active:before {
-                    border-top: 6px solid #4C3F35;
-                }
-                .sub-menu-service {
-                    margin-left: 20px;
-                }
-                    .sub-menu-service li {
-                        margin-bottom: 10px;
+                    .link-toggle:before {
+                        content: '';
+                        position: absolute;
+                        top: 10px;
+                        left: 5px;
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+                        margin-right: 5px;
+                        border-top: 6px solid transparent;
+                        border-left: 6px solid #4C3F35;
+                        border-bottom: 6px solid transparent;
+                        border-right: 0;
                     }
+                    .drilling .link-toggle:before {
+                        border-left: 6px solid #4C3F35;
+                    }
+                    .link-toggle.active:before {
+                        top: 14px;
+                        width: 0;
+                        height: 0;
+                        border-left: 6px solid transparent;
+                        border-right: 6px solid transparent;
+                        border-top: 6px solid red;
+                        border-bottom: 0;
+                    }
+                    .drilling .link-toggle.active:before {
+                        border-top: 6px solid #4C3F35;
+                    }
+                    .sub-menu-service {
+                        margin-left: 20px;
+                    }
+                        .sub-menu-service li {
+                            margin-bottom: 10px;
+                        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
