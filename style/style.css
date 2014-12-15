@@ -630,6 +630,9 @@ a:hover                        { text-decoration:underline; }
         .list-reviews dt {
             display: inline-block;
         }
+    .contacts .header-section {
+        margin-bottom: 10px;
+    }
     .box-contacts-text {
         float: left;
         width: 315px;
@@ -637,6 +640,22 @@ a:hover                        { text-decoration:underline; }
         .box-contacts-text dt {
             margin: 15px 0 10px;
             font-weight: bold;
+        }
+    .box-main-form {
+        float: right;
+        width: 508px;
+        border: 1px solid #E0E9EB;
+    }
+        .header-form {
+            display: block;
+            width: 100%;
+            padding: 8px 0 7px;
+            font: 24px 'DinDisplayPro-reg';
+            text-align: center;
+            background: #DCE5E7;
+        }
+        .content-form {
+            margin: 19px;
         }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
