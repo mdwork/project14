@@ -1068,11 +1068,17 @@ a:hover                        { text-decoration:underline; }
                         border-top: 6px solid #4C3F35;
                     }
                     .sub-menu-service {
-                        margin-left: 20px;
+                        margin: 20px 0 20px 20px;
                     }
                         .sub-menu-service li {
                             margin-bottom: 10px;
                         }
+                            .sub-menu-service li a {
+                                text-decoration: underline;
+                            }
+                            .sub-menu-service li a:hover {
+                                text-decoration: none;
+                            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
