@@ -661,6 +661,9 @@ a:hover                        { text-decoration:underline; }
             .content-form li {
                 margin-bottom: 15px;
             }
+            .content-form .wdt-input {
+                width: 228px;
+            }
                 .content-form input,
                 .content-form textarea {
                     font-size: 14px;
@@ -692,13 +695,17 @@ a:hover                        { text-decoration:underline; }
                     resize: none;
                 }
                 .content-form .input-capcha {
-
+                    width: 156px;
+                }
+                .capcha-img {
+                    margin: 6px 0 0 20px;
                 }
         .footer-form {
             margin: 19px;
             text-align: center;
         }
             .note-form {
+                margin-bottom: 15px;
                 font-size: 13px;
                 color: #6f6f6f;
                 text-align: left;
