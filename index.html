@@ -6,7 +6,9 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=1300, user-scalable=yes">
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
+    <link rel="stylesheet" type="text/css" href="feedback/css/jquery.jgrowl.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
 <body class="home home-blue">
@@ -375,6 +377,19 @@
     </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!--Обратная связь-->
+    <script type="text/javascript" src="feedback/js/jquery.jgrowl.js"></script>
+    <script type="text/javascript" src="feedback/js/jquery.arcticmodal.js"></script>
+    <script type="text/javascript" src="feedback/js/feedback.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(document).on('click', '.modal-btn', function(){
+                $('#small-modal').arcticmodal();
+            });
+        });
+    </script>
+
     <script src="js/common.js"></script>
     <script src="js/slides.js"></script>
     <script>
