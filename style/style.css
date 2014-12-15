@@ -867,7 +867,9 @@ a:hover                        { text-decoration:underline; }
         background-size: 100% 100%;
     }
 }
-
+.box-hide {
+    display: block;
+}
 /*map*/
 .map {
     height: 575px;
