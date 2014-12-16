@@ -23,8 +23,8 @@
 		now2.setHours(0,0,0,0);
 		$('#date2').DatePicker({
 			flat: true,
-			date: ['2008-07-31', '2008-07-28'],
-			current: '2008-07-31',
+			date: ['2014-12-01', '2014-12-03'],
+			current: '2014-12-01',
 			format: 'Y-m-d',
 			calendars: 1,
 			mode: 'multiple',
