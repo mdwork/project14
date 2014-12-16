@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
     <link rel="stylesheet" type="text/css" href="feedback/css/jquery.jgrowl.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="style/datepicker.css" type="text/css" />
 </head>
 
 <body class="drilling-page">
@@ -150,7 +151,9 @@
                         </header>
 
                         <div class="content-side-bar">
-                            <div class="calendar"></div>
+                            <div class="calendar">
+                                <p id="date2"></p>
+                            </div>
                             <ul class="list-status-work">
                                 <li class="free">- свободный</li>
                                 <li class="underemployed">- не полностю занятый</li>
@@ -552,6 +555,12 @@
         </div><!--end CONTENT-->
     </footer>
 
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script type="text/javascript" src="js/eye.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/layout.js?ver=1.0.2"></script>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
 
@@ -566,5 +575,6 @@
             });
         });
     </script>
+
 </body>
 </html>

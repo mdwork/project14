@@ -120,3 +120,6 @@ td.datepickerDisabled a:hover {
 td.datepickerSpecial.datepickerSelected a {
 	background: #a00;
 }
+.datepickerDays tr:last-child {
+	display: none;
+}
