@@ -16,8 +16,10 @@ div.datepicker {
 .datepickerHidden {
 	display: none;
 }
-div.datepicker table {
-	border-collapse:collapse;
+.datepickerViewDays,
+.datepickerViewDays th,
+.datepickerViewDays td {
+	border: 1px solid #DCE5E7;
 }
 div.datepicker a {
 	color: #212121;
@@ -27,26 +29,25 @@ div.datepicker a {
     cursor: pointer;
 }
 div.datepicker table td {
-	text-align: right;
+	text-align: center;
 	padding: 0;
 	margin: 0;
 }
 div.datepicker th {
 	text-align: center;
-	color: #999;
+	color: #212121;
 	font-weight: normal;
 }
 div.datepicker tbody th {
-	text-align: left;
+	line-height: 35px;
+	font-weight: bold;
 }
 div.datepicker tbody a {
 	display: block;
 }
 .datepickerDays a {
-	width: 20px;
-	line-height: 16px;
-	height: 16px;
-	padding-right: 2px;
+	width: 35px;
+	line-height: 35px;
 }
 .datepickerYears a,
 .datepickerMonths a{
@@ -74,9 +75,6 @@ div.datepicker a:hover {
 }
 div.datepicker td.datepickerNotInMonth a:hover {
 	color: #999;
-}
-div.datepicker tbody th {
-	text-align: left;
 }
 .datepickerSpace div {
 	width: 20px;
