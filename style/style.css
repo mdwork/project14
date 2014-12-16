@@ -97,6 +97,9 @@ a:hover                        { text-decoration:underline; }
 .water-supply-page {
     background: url("../images/bg_water_supply.png") #1C599A no-repeat top center;
 }
+.drilling-page {
+    background: url("../images/bg_drilling.png") #4C3F36 no-repeat top center;
+}
 .wrapper {
     overflow: hidden;
     width: 1200px;
@@ -122,6 +125,9 @@ a:hover                        { text-decoration:underline; }
 .water-supply-page .wrapper {
     width: 1201px;
     background-image: url("../images/header/bg_header_top_water_supply.jpg");
+}
+.drilling-page .wrapper {
+    background-image: url("../images/header/bg_header_top_drilling.jpg");
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
