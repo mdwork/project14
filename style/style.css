@@ -94,6 +94,9 @@ a:hover                        { text-decoration:underline; }
 .home-blue {
     background: url("../images/bg_main_blue.jpg") #1775A6 no-repeat top center;
 }
+.water-supply-page {
+    background: url("../images/bg_water_supply.png") #1C599A no-repeat top center;
+}
 .wrapper {
     overflow: hidden;
     width: 1200px;
@@ -116,6 +119,10 @@ a:hover                        { text-decoration:underline; }
         width: 100%;
         height: 187px;
     }
+.water-supply-page .wrapper {
+    width: 1201px;
+    background-image: url("../images/header/bg_header_top_water_supply.jpg");
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
