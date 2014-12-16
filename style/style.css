@@ -1124,10 +1124,12 @@ a:hover                        { text-decoration:underline; }
                         border-top: 6px solid #4C3F35;
                     }
                     .sub-menu-service {
-                        margin: 20px 0 20px 20px;
+                        margin: 20px 0
                     }
                         .sub-menu-service li {
                             margin-bottom: 10px;
+                            padding: 0 0 2px 20px;
+                            border-bottom: 1px solid #fff;
                         }
                             .sub-menu-service li a {
                                 text-decoration: underline;
@@ -1135,6 +1137,22 @@ a:hover                        { text-decoration:underline; }
                             .sub-menu-service li a:hover {
                                 text-decoration: none;
                             }
+            .wrap-link-map {
+                display: block;
+                padding: 2px 5px 2px 60px;
+                border: 1px dashed #E66802;
+                background: url("../images/sideBar/service/map_icon.png") #fff no-repeat 20px center;
+
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+            }
+                .wrap-link-map a {
+                    text-decoration: underline;
+                }
+                .wrap-link-map a:hover {
+                    text-decoration: none;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
