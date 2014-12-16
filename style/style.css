@@ -150,7 +150,7 @@ a:hover                        { text-decoration:underline; }
     background-image: url("../images/header/bg_header_top_heating.jpg");
 }
 .water-treatment .wrapper {
-    background-image: url("../images/header/bg_header_top_water_treatment.jpg");
+    background-image: url("../images/header/bg_header_water_treatment.jpg");
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
@@ -1297,6 +1297,15 @@ a:hover                        { text-decoration:underline; }
 }
 .box-hide {
     display: none;
+}
+.bg_green {
+    background: #9CCC5D;
+}
+.bg_yellow {
+    background: #FFF99A;
+}
+.bg_red {
+    background: #EE4A4A;
 }
 /*map*/
 .map {

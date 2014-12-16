@@ -73,10 +73,6 @@ tbody.datepickerYears td.datepickerSelected,
 tbody.datepickerMonths td.datepickerSelected{
 	background: #17384d;
 }
-div.datepicker a:hover,
-div.datepicker a:hover {
-	color: #88c5eb;
-}
 div.datepicker td.datepickerNotInMonth a:hover {
 	color: #999;
 }
