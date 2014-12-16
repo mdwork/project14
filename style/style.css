@@ -100,9 +100,12 @@ a:hover                        { text-decoration:underline; }
 .drilling-page {
     background: url("../images/bg_drilling.png") #4C3F36 no-repeat top center;
 }
+.electrics-page {
+    background: url("../images/bg_electrics.png") #F2CD00 no-repeat top center;
+}
 .wrapper {
     overflow: hidden;
-    width: 1200px;
+    width: 1201px;
     min-height: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -123,11 +126,13 @@ a:hover                        { text-decoration:underline; }
         height: 187px;
     }
 .water-supply-page .wrapper {
-    width: 1201px;
     background-image: url("../images/header/bg_header_top_water_supply.jpg");
 }
 .drilling-page .wrapper {
     background-image: url("../images/header/bg_header_top_drilling.jpg");
+}
+.electrics-page .wrapper {
+    background-image: url("../images/header/bg_header_top_electrics.jpg");
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
