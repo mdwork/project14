@@ -79,6 +79,11 @@ div.datepicker td.datepickerNotInMonth a:hover {
 .datepickerSpace div {
 	width: 20px;
 }
+.datepickerGoNext,
+.datepickerGoPrev,
+.datepickerMonth {
+	border: none !important;
+}
 .datepickerGoNext a,
 .datepickerGoPrev a,
 .datepickerMonth a {

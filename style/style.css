@@ -327,6 +327,25 @@ a:hover                        { text-decoration:underline; }
             height: 195px;
             margin: 0 auto 15px;
         }
+
+        .list-status-work li:before {
+            content: '';
+            display: inline-block;
+            position: relative;
+            top: 2px;
+            width: 13px;
+            height: 13px;
+            margin-right: 5px;
+        }
+        .list-status-work .free:before {
+            background: #9CCC5D;
+        }
+        .list-status-work .underemployed:before {
+            background: #FFF99A;
+        }
+        .list-status-work .busy:before {
+            background: #EE4A4A;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
