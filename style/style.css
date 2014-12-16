@@ -382,6 +382,7 @@ a:hover                        { text-decoration:underline; }
         .list-status-work .busy:before {
             background: #EE4A4A;
         }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1069,22 +1070,22 @@ a:hover                        { text-decoration:underline; }
             padding-bottom: 25px;
         }
             .drilling .header-service {
-                background: #4C3F35;
+                background: url("../images/sideBar/service/drilling_icon.png") no-repeat 12px center #4C3F35;
             }
             .water-supply .header-service {
-                background: #1C599B;
+                background: url("../images/sideBar/service/water_supply.png") no-repeat 5px center #1C599B;
             }
             .heating .header-service {
-                background: #ED6E07;
+                background: url("../images/sideBar/service/heating.png") no-repeat 10px center #ED6E07;
             }
             .sewerage .header-service {
-                background: #6CA127;
+                background: url("../images/sideBar/service/sewerage.png") no-repeat 5px center #6CA127;
             }
             .electrics .header-service {
-                background: #F2CD00;
+                background: url("../images/sideBar/service/electrics.png") no-repeat 10px center #F2CD00;
             }
             .water-treatment .header-service {
-                background: #62CCF6;
+                background: url("../images/sideBar/service/water_treatment.png") no-repeat 10px center #62CCF6;
             }
                 .link-toggle {
                     position: relative;
