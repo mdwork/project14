@@ -113,7 +113,6 @@ table.datepickerViewYears tbody.datepickerMonths,
 table.datepickerViewYears tr.datepickerDoW {
 	display: none;
 }
-td.datepickerDisabled a,
 td.datepickerDisabled.datepickerNotInMonth a{
 	color: #6f6f6f;
 }
@@ -123,6 +122,18 @@ td.datepickerDisabled a:hover {
 td.datepickerSpecial.datepickerSelected a {
 	background: #a00;
 }
-.datepickerDays tr:last-child {
-	display: none;
+.bg-work-day-js {
+
+}
+.green {
+	background: #9CCC5D;
+}
+.red {
+	background: #EE4A4A;
+}
+.yellow {
+	background: #FFF99A;
+}
+.datepickerNotInMonth {
+	background: #fff;
 }
