@@ -106,6 +106,12 @@ a:hover                        { text-decoration:underline; }
 .sewerage-page {
     background: url("../images/bg_sewerage.png") #6BA127 no-repeat top center;
 }
+.heating-page {
+    background: url("../images/bg_water_heating.png") #ED6E07 no-repeat top center;
+}
+.water-treatment {
+    background: url("../images/bg_water_treatment.png") #62CCF6 no-repeat top center;
+}
 .wrapper {
     overflow: hidden;
     width: 1201px;
@@ -139,6 +145,12 @@ a:hover                        { text-decoration:underline; }
 }
 .sewerage-page .wrapper {
     background-image: url("../images/header/bg_header_top_sewerage.jpg");
+}
+.heating-page .wrapper {
+    background-image: url("../images/header/bg_header_top_heating.jpg");
+}
+.water-treatment .wrapper {
+    background-image: url("../images/header/bg_header_top_water_treatment.jpg");
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
