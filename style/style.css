@@ -103,6 +103,9 @@ a:hover                        { text-decoration:underline; }
 .electrics-page {
     background: url("../images/bg_electrics.png") #F2CD00 no-repeat top center;
 }
+.sewerage-page {
+    background: url("../images/bg_sewerage.png") #6BA127 no-repeat top center;
+}
 .wrapper {
     overflow: hidden;
     width: 1201px;
@@ -133,6 +136,9 @@ a:hover                        { text-decoration:underline; }
 }
 .electrics-page .wrapper {
     background-image: url("../images/header/bg_header_top_electrics.jpg");
+}
+.sewerage-page .wrapper {
+    background-image: url("../images/header/bg_header_top_sewerage.jpg");
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
