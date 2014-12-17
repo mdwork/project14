@@ -97,21 +97,9 @@ ul.minical {
               padding: 0.1em 0.3em;
               text-decoration: none; }
             /* line 95, /Users/camerondaigle/Projects/jquery-minical/source/stylesheets/jquery.minical.css.sass */
-            ul.minical li article section table tbody tr td.minical_highlighted a {
-              border-color: rgba(81, 122, 156, 0.5);
-              color: #3d454b; }
-            /* line 98, /Users/camerondaigle/Projects/jquery-minical/source/stylesheets/jquery.minical.css.sass */
-            ul.minical li article section table tbody tr td.minical_selected a {
-              border-color: #517a9c;
-              color: #3d454b; }
-            /* line 101, /Users/camerondaigle/Projects/jquery-minical/source/stylesheets/jquery.minical.css.sass */
+
             ul.minical li article section table tbody tr td.minical_past_month a, ul.minical li article section table tbody tr td.minical_future_month a {
               color: rgba(61, 69, 75, 0.5); }
-            /* line 104, /Users/camerondaigle/Projects/jquery-minical/source/stylesheets/jquery.minical.css.sass */
-            ul.minical li article section table tbody tr td.minical_today a {
-              border-color: #517a9c;
-              background: #517a9c;
-              color: white; }
             /* line 108, /Users/camerondaigle/Projects/jquery-minical/source/stylesheets/jquery.minical.css.sass */
             ul.minical li article section table tbody tr td.minical_disabled a {
               color: rgba(61, 69, 75, 0.5);

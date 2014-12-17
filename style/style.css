@@ -1402,5 +1402,6 @@ a:hover                        { text-decoration:underline; }
 }
 
 .wrap-popup {
+    display: none;
     position: absolute;
 }
