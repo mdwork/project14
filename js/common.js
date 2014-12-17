@@ -4,7 +4,8 @@ $(document).ready(function() {
         $(this).parent().find('.sub-menu-js').slideToggle().end().end().toggleClass('active');
     });
 
-    $('.bg_yellow ').on('click', function(){
-
+    $('.bg_yellow').on('click', function(){
+        $('.wrap-popup').css({'left': $(this).offset().left,
+            'top': $(this).offset().top});
     });
 });
