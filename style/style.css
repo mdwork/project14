@@ -1402,7 +1402,7 @@ a:hover                        { text-decoration:underline; }
 }
 
 .bg-popup {
-    display: block
+    display: block;
     background: rgba(0, 0, 0, 0.6);
 }
 .popup-calendar {
@@ -1423,19 +1423,14 @@ a:hover                        { text-decoration:underline; }
             .choose-period-day h4 {
 
             }
-        .list-period-day {
 
-        }
             .list-period-day li {
                 display: inline-block;
+                width: 54px;
+                padding: 5px 0px;
+                color: #212121;
+                text-decoration: none;
             }
-                .list-period-day li a {
-                    display: block;
-                    width: 54px;
-                    padding: 5px 0px;
-                    color: #212121;
-                    text-decoration: none;
-                }
                 .red-day {
                     background: #EE4A4A;
                 }
@@ -1445,3 +1440,6 @@ a:hover                        { text-decoration:underline; }
                 .yellow-day {
                     background: #FFF99A;
                 }
+        .order-service-box {
+            display: none;
+        }

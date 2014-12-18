@@ -25,17 +25,22 @@ $(document).ready(function() {
         dateWorks();
     });
 
-    var wrapPopupCalendar = $('.popup-calendar');
+    var wrapPopupCalendar = $('.popup-calendar'),
+        orderBox = $('.order-service-box');
     $('.bg_yellow, .bg_green').on('click', function(){
         wrapPopupCalendar.css({'left': $(this).offset().left + 35,
             'top': $(this).offset().top}).addClass('display');
 
         $('body').on('click', function(){
             wrapPopupCalendar.removeClass('display');
-
-            wrapPopupCalendar.on('click', function(e) {
-                e.stopPropagation();
-            });
-        })
+        });
+        wrapPopupCalendar.on('click', function(e) {
+            e.stopPropagation();
+        });
     });
+
+    $('.green-day, .yellow-day').on('click', function(e){
+        e.preventDefault();
+        orderBox.addClass('display');
+    })
 });
