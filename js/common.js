@@ -25,7 +25,7 @@ $(document).ready(function() {
         dateWorks();
     });
 
-    var wrapPopupCalendar = $('.wrap-popup');
+    var wrapPopupCalendar = $('.popup-calendar');
     $('.bg_yellow, .bg_green').on('click', function(){
         wrapPopupCalendar.css({'left': $(this).offset().left + 35,
             'top': $(this).offset().top}).addClass('display');
