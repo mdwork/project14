@@ -1408,14 +1408,40 @@ a:hover                        { text-decoration:underline; }
 .popup-calendar {
     display: none;
     position: absolute;
+    width: 345px;
     background: #fff;
 }
     .choose-period-day {
-
+        padding: 10px 0 20px;
+        text-align: center;
     }
         .choose-period-day header {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
             border-bottom: 1px solid #D3DCE6;
         }
             .choose-period-day h4 {
 
             }
+        .list-period-day {
+
+        }
+            .list-period-day li {
+                display: inline-block;
+            }
+                .list-period-day li a {
+                    display: block;
+                    width: 54px;
+                    padding: 5px 0px;
+                    color: #212121;
+                    text-decoration: none;
+                }
+                .red-day {
+                    background: #EE4A4A;
+                }
+                .green-day {
+                    background: #9CCC5D;
+                }
+                .yellow-day {
+                    background: #FFF99A;
+                }
