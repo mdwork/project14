@@ -1406,8 +1406,14 @@ a:hover                        { text-decoration:underline; }
     background: #fff;
 }
     .choose-period-day {
+        position: relative;
+        z-index: 2;
         padding: 10px 0 20px;
         text-align: center;
+
+        -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
     }
         .choose-period-day header {
             margin-bottom: 20px;
@@ -1421,7 +1427,7 @@ a:hover                        { text-decoration:underline; }
             .list-period-day li {
                 display: inline-block;
                 width: 54px;
-                padding: 5px 0px;
+                padding: 5px 0;
                 color: #212121;
                 text-decoration: none;
                 cursor: pointer;
@@ -1438,6 +1444,17 @@ a:hover                        { text-decoration:underline; }
         .order-service-box {
             display: none;
         }
+
+.callback-form {
+    position: relative;
+    z-index: 1;
+    width: 344px;
+    background: #FFFFFF;
+
+    -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
 /*polzunok*/
 .formCost {
     float: left;
