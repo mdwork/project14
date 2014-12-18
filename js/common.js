@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    $(document).on('click', '.modal-btn', function(){
+        $('#small-modal').arcticmodal();
+    });
+
     $("form.inline :text").minical({
         inline: true
     });
