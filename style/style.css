@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:14px Arial, Serif; background:url("../images/bg_main.png") no-repeat top center; color:#212121; }
+body                            { padding:0; margin:0; font:14px Arial, sans-serif; background:url("../images/bg_main.png") no-repeat top center; color:#212121; }
 div,menu,figure,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
 	padding:0;
 	margin:0;
@@ -250,12 +250,12 @@ a:hover                        { text-decoration:underline; }
                     background: #E97C22;
                     border: 1px solid #CA630E;
                     color: #fff;
-                    font-size: 14px;
+                    font: 300 14px Arial, sans-serif;
                     cursor: pointer;
 
-                    -webkit-border-radius: 5px;
-                    -moz-border-radius: 5px;
-                    border-radius: 5px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    border-radius: 4px;
 
                     -webkit-transition: all .5s;
                     -moz-transition: all .5s;
@@ -265,6 +265,23 @@ a:hover                        { text-decoration:underline; }
                 }
                 .btn:hover {
                     background: #CA630E;
+                }
+                .btn-gray {
+                    background: #B0BDC0;
+                    border: 1px solid #99A8AB;
+                }
+                .btn-gray:hover {
+                    background: #BBC9CC;
+                }
+                .callback-form .btn {
+                    height: 34px;
+                    width: 120px;
+                    padding: 0;
+                    font-size: 17px;
+                    line-height: 34px;
+                }
+                .callback-form .btn-gray {
+                    margin-right: 14px;
                 }
                 .call-back-box strong,
                 .credit-box strong {
@@ -715,8 +732,8 @@ a:hover                        { text-decoration:underline; }
         .header-form {
             display: block;
             width: 100%;
-            padding: 8px 0 7px;
-            font: 24px 'DinDisplayPro-reg';
+            font: 24px 'DinDisplayPro-reg', sans-serif;
+            line-height: 43px;
             text-align: center;
             background: #DCE5E7;
         }
@@ -739,7 +756,7 @@ a:hover                        { text-decoration:underline; }
                     display: block;
                     margin-bottom: 5px;
                 }
-                .form .star {
+                .star {
                     color: #f70000;
                 }
                 .content-form .input-text {
@@ -749,6 +766,11 @@ a:hover                        { text-decoration:underline; }
                     -moz-box-sizing: border-box;
                     -webkit-box-sizing: border-box;
                     box-sizing: border-box;
+                }
+                .content-form .input-text:focus {
+                    -webkit-box-shadow: 0 0 2px 0 rgba(193, 215, 220, 1);
+                    -moz-box-shadow: 0 0 2px 0 rgba(193, 215, 220, 1);
+                    box-shadow: 0 0 2px 0 rgba(193, 215, 220, 1);
                 }
                 .content-form textarea {
                     width: 100%;
@@ -1402,18 +1424,17 @@ a:hover                        { text-decoration:underline; }
 .popup-calendar {
     display: none;
     position: absolute;
+    z-index: 1;
     width: 345px;
     background: #fff;
+
+    -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
 }
     .choose-period-day {
-        position: relative;
-        z-index: 2;
         padding: 10px 0 20px;
         text-align: center;
-
-        -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
-        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
     }
         .choose-period-day header {
             margin-bottom: 20px;
@@ -1446,15 +1467,23 @@ a:hover                        { text-decoration:underline; }
         }
 
 .callback-form {
-    position: relative;
-    z-index: 1;
     width: 344px;
     background: #FFFFFF;
-
-    -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
 }
+    .popup-calendar .header-form {
+        font-size: 22px;
+        line-height: 39px;
+
+        -webkit-box-shadow: inset 0 3px 7px -4px rgba(0, 0, 0, 0.8);
+        -moz-box-shadow: inset 0 3px 7px -4px rgba(0, 0, 0, 0.8);
+        box-shadow: inset 0 3px 7px -4px rgba(0, 0, 0, 0.8);
+    }
+    .callback-form .content-form {
+        margin: 15px 40px 17px;
+    }
+    .callback-form .footer-form {
+        margin: 17px 40px 27px;
+    }
 /*polzunok*/
 .formCost {
     float: left;
@@ -1462,10 +1491,8 @@ a:hover                        { text-decoration:underline; }
 }
 .formCost label {
     float: left;
-    font-size: 12px;
-    color: #E40000;
-    font-weight: bold;
-    margin-right: 5px;
+    font-size: 14px;
+    margin-right: 11px;
     position: relative;
     top: 2px;
 }
@@ -1479,13 +1506,14 @@ a:hover                        { text-decoration:underline; }
     height: 17px;
     background: none;
     border: 1px solid #E5E5E5;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .sliderCont {
     width: 178px;
     height: 27px;
     float: left;
+    margin-left: 5px;
 }
 
 /* Рђ СЌС‚Рѕ РїСЂР°РІРёР»Р° РґР»СЏ СЃРєСЂРёРїС‚Р°:  */
@@ -1499,10 +1527,11 @@ a:hover                        { text-decoration:underline; }
 .ui-slider .ui-slider-handle {
     position: absolute;
     z-index: 2;
-    width: 13px;
+    width: 9px;
     height: 13px;
-    background: url(../images/slider.png) no-repeat;
-    cursor: pointer
+    background: url(../images/slider.png) no-repeat center;
+    cursor: pointer;
+    border-radius: 0;
 }
 .ui-slider .ui-slider-range {
     position: absolute;
@@ -1535,7 +1564,8 @@ a:hover                        { text-decoration:underline; }
 }
 .ui-widget-header {
     border: 1px solid #D4D4D4;
-    background: #F00;
+    background: url("../images/slider_bg.jpg") repeat center;
+    background-attachment: fixed;
 }
 .ui-corner-all {
     -moz-border-radius: 4px;

@@ -589,45 +589,33 @@
                         <legend class="header-form">Заказать услугу</legend>
 
                         <ul class="content-form">
-                            <li class="wdt-input">
+                            <li>
                                 <label>
                                     <span class="name">Ваше имя<span class="star">*</span>:</span>
                                     <input class="input-text" type="text" name="name" value="">
                                 </label>
                             </li>
 
-                            <li class="wdt-input">
+                            <li>
                                 <label>
                                     <span class="name">Телефон<span class="star">*</span>:</span>
                                     <input class="input-text" type="tel" name="tell" value="">
                                 </label>
                             </li>
 
-                            <li class="wdt-input">
+                            <li>
                                 <label>
                                     <span class="name">E-mail:</span>
                                     <input class="input-text" type="email" name="email" value="">
                                 </label>
                             </li>
 
-                            <li class="wdt-input">
+                            <li class="overflow">
                                 <span class="name">Удобное время для звонка:</span>
 
-                                <label>
-                                    <span>От</span>
-                                    <input class="input-text" type="time" name="time-from" value="00:00">
-                                </label>
-
-                                <label>
-                                    <span>До</span>
-                                    <input class="input-text" type="time" name="time-to" value="24:00">
-                                </label>
-                            </li>
-                            
-                            <li>
                                 <div class="formCost">
-                                    <label for="minCost">Цена: от</label> <input type="text" id="minCost" value="0:00"/>
-                                    <label for="maxCost">до</label> <input type="text" id="maxCost" value="24:00"/>
+                                    <label for="minCost">От</label> <input type="text" id="minCost" value="0:00"/>
+                                    <label for="maxCost">До</label> <input type="text" id="maxCost" value="24:00"/>
                                 </div>
                                 <div class="sliderCont">
                                     <div id="slider"></div>
@@ -647,8 +635,8 @@
                         </ul>
 
                         <footer class="footer-form">
-                            <aside class="note-form"><span class="star">*</span> - поля обязательны для заполнения</aside>
-                            <button class="btn">Отменить</button>
+                            <aside class="note-form"><span class="star">*</span>- поля обязательны для заполнения</aside>
+                            <button class="btn btn-gray">Отменить</button>
                             <button class="btn feedback">Отправить</button>
                         </footer>
                     </fieldset>
