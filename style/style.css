@@ -1439,13 +1439,6 @@ a:hover                        { text-decoration:underline; }
             display: none;
         }
 /*polzunok*/
-.form-polzunok {
-    width: 250px;
-    position: relative;
-    margin: 20px;
-
-}
-
 .formCost {
     float: left;
     margin-bottom: 10px;
