@@ -502,10 +502,11 @@ a:hover                        { text-decoration:underline; }
             border-bottom: 2px solid #DCE5E7;
         }
             .header-section h1,
-            .header-section h2 {
+            .header-section h2,
+            .header-section span {
                 font: 30px 'DinDisplayPro-reg', sans-serif;
             }
-        .sub-header {
+        .main-header {
             margin-bottom: 10px;
             color: #104773;
             font-size: 28px;
@@ -1476,7 +1477,7 @@ a:hover                        { text-decoration:underline; }
 
 .callback-form {
     width: 345px;
-    background: #FFFFFF;
+    background: #FFF;
 }
     .popup-calendar .header-form {
         font-size: 22px;
