@@ -1408,4 +1408,14 @@ a:hover                        { text-decoration:underline; }
 .popup-calendar {
     display: none;
     position: absolute;
+    background: #fff;
 }
+    .choose-period-day {
+
+    }
+        .choose-period-day header {
+            border-bottom: 1px solid #D3DCE6;
+        }
+            .choose-period-day h4 {
+
+            }
