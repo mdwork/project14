@@ -291,11 +291,14 @@ a:hover                        { text-decoration:underline; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.bg-side-bar {
+.bg-sidebar-wrap {
     background: #F4FAFD;
 }
+.bg-side-bar {
+    background: #FFF;
+}
 .side-bar {
-    float: left;
+    overflow: hidden;
     width: 290px;
     background: #F4FAFD;
 }
@@ -405,6 +408,7 @@ a:hover                        { text-decoration:underline; }
 /*----------------------------------------------------------------------------------*/
 .main-content {
     overflow: hidden;
+    float: right;
     width: 842px;
     padding: 0 0 70px 28px;
     background: #fff;
