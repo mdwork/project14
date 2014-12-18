@@ -759,12 +759,6 @@ a:hover                        { text-decoration:underline; }
                     box-sizing: border-box;
                     resize: none;
                 }
-                .content-form .input-capcha {
-                    width: 156px;
-                }
-                .capcha-img {
-                    margin: 6px 0 0 20px;
-                }
         .footer-form {
             margin: 19px;
             text-align: center;

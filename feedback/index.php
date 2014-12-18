@@ -40,6 +40,9 @@ $form['feedback'] = array(
         'msg' => array(
             'title' => 'Сообщение',
         ),
+        'bot-field' => array(
+            'title' => 'Поле заполнял бот!!!',
+        ),
 	),
 	'cfg' => array(
 		'charset' => 'utf-8',
