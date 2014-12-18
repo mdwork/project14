@@ -32,13 +32,17 @@ $(document).ready(function() {
     $('.minical_day_12_8_2014').addClass('bg_red');
 
     var wrapPopupCalendar = $('.popup-calendar'),
-        orderBox = $('.order-service-box');
+        orderBox = $('.order-service-box'),
+        bgPopupCalendar = $('.bg-popup');
     $('.bg_yellow, .bg_green').on('click', function(){
         wrapPopupCalendar.css({'left': $(this).offset().left + 35,
             'top': $(this).offset().top}).addClass('display');
 
-        $('body').on('click', function(){
+        $('body, .btn-cancel').on('click', function(e){
+            e.preventDefault();
             wrapPopupCalendar.removeClass('display');
+            orderBox.removeClass('display');
+            bgPopupCalendar.height(0);
         });
         wrapPopupCalendar.on('click', function(e) {
             e.stopPropagation();
@@ -47,7 +51,9 @@ $(document).ready(function() {
 
     $('.green-day, .yellow-day').on('click', function(e){
         e.preventDefault();
+        bgPopupCalendar.addClass('display');
         orderBox.addClass('display');
+        bgPopupCalendar.height($(document).height());
     });
 
     $("#slider").slider({
