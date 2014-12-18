@@ -1439,7 +1439,7 @@ a:hover                        { text-decoration:underline; }
             display: none;
         }
 /*polzunok*/
-.form {
+.form-polzunok {
     width: 250px;
     position: relative;
     margin: 20px;

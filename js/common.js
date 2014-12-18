@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $("form.inline :text").minical({
+        inline: true
+    });
     $("#slides").slides({
 
         loaded: function(){
@@ -11,6 +14,8 @@ $(document).ready(function() {
     setTimeout(function(){
         $("#slides").slides("play");
     }, 5000);
+
+
 
     $(document).on('click', '.modal-btn', function(){
         $('#small-modal').arcticmodal();

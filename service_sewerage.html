@@ -152,7 +152,10 @@
 
                         <div class="content-side-bar">
                             <div class="calendar">
-                                <p id="date2"></p>
+                                <form class="inline">
+                                    <input class="no-display" type="text">
+                                    <ul id="minical_calendar_1"></ul>
+                                </form>
                             </div>
 
                             <ul class="list-status-work">
@@ -556,26 +559,49 @@
         </div><!--end CONTENT-->
     </footer>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/datepicker.js"></script>
-    <script type="text/javascript" src="js/eye.js"></script>
-    <script type="text/javascript" src="js/utils.js"></script>
-    <script type="text/javascript" src="js/layout.js?ver=1.0.2"></script>
+    <!--popup-->
+    <div class="bg-popup">
+        <section class="popup-calendar">
+            <div class="choose-period-day">
+                <header>
+                    <h4>График занятости на 18 декабря</h4>
+                </header>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <ul class="list-period-day">
+                    <li class="red-day">Утро</li>
+                    <li class="green-day">День</li>
+                    <li class="yellow-day">Вечер</li>
+                </ul>
+            </div>
+
+            <div class="order-service-box">
+                <form action="#" method="post" class="form-polzunok">
+                    <div class="formCost">
+                        <label for="minCost">Цена: от</label> <input type="text" id="minCost" value="0:00"/>
+                        <label for="maxCost">до</label> <input type="text" id="maxCost" value="24:00"/>
+                    </div>
+                    <div class="sliderCont">
+                        <div id="slider"></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/ga.js"></script>
+    <script src="js/jquery.minical.js" type="text/javascript"></script>
+    <script src="js/aqp8xdq.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script type="text/javascript" src="js/ui-polzunok.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
 
     <!--Обратная связь-->
     <script type="text/javascript" src="feedback/js/jquery.jgrowl.js"></script>
     <script type="text/javascript" src="feedback/js/jquery.arcticmodal.js"></script>
     <script type="text/javascript" src="feedback/js/feedback.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(document).on('click', '.modal-btn', function(){
-                $('#small-modal').arcticmodal();
-            });
-        });
-    </script>
-
+    <script src="js/slides.js"></script>
 </body>
 </html>
