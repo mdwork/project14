@@ -26,6 +26,7 @@ $(document).ready(function() {
         $(this).parent().find('.sub-menu-js').slideToggle().end().end().toggleClass('active');
     });
 
+    /*set working days*/
     $('.minical_day_12_16_2014').addClass('bg_yellow');
     $('.minical_day_12_10_2014').addClass('bg_yellow');
     $('.minical_day_12_9_2014').addClass('bg_green');

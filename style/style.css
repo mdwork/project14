@@ -3,7 +3,7 @@
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
 body                            { padding:0; margin:0; font:14px Arial, sans-serif; background:url("../images/bg_main.png") no-repeat top center; color:#212121; }
-div,menu,figure,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
+div,menu,figure,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,legend,select,input,textarea {
 	padding:0;
 	margin:0;
 	outline:none;
