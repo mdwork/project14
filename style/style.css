@@ -1424,16 +1424,17 @@ a:hover                        { text-decoration:underline; }
                 padding: 5px 0px;
                 color: #212121;
                 text-decoration: none;
+                cursor: pointer;
             }
-                .red-day {
-                    background: #EE4A4A;
-                }
-                .green-day {
-                    background: #9CCC5D;
-                }
-                .yellow-day {
-                    background: #FFF99A;
-                }
+            .red-day {
+                background: #EE4A4A;
+            }
+            .green-day {
+                background: #9CCC5D;
+            }
+            .yellow-day {
+                background: #FFF99A;
+            }
         .order-service-box {
             display: none;
         }
