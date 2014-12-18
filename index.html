@@ -376,37 +376,21 @@
         </div><!--end CONTENT-->
     </footer>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--Обратная связь-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/ga.js"></script>
+    <script src="js/jquery.minical.js" type="text/javascript"></script>
+    <script src="js/aqp8xdq.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script type="text/javascript" src="js/ui-polzunok.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 
     <!--Обратная связь-->
     <script type="text/javascript" src="feedback/js/jquery.jgrowl.js"></script>
     <script type="text/javascript" src="feedback/js/jquery.arcticmodal.js"></script>
     <script type="text/javascript" src="feedback/js/feedback.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(document).on('click', '.modal-btn', function(){
-                $('#small-modal').arcticmodal();
-            });
-        });
-    </script>
-
-    <script src="js/common.js"></script>
     <script src="js/slides.js"></script>
-    <script>
-        $(function(){
-            $("#slides").slides({
-
-                loaded: function(){
-                    currentSlide( 1 );
-                },
-                playInterval: 10000,
-                width: 842,
-                height: 292
-            });
-            setTimeout(function(){
-                $("#slides").slides("play");
-            }, 5000)
-        });
-    </script>
 </body>
 </html>

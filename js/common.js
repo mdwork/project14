@@ -1,10 +1,19 @@
 $(document).ready(function() {
+    $("#slides").slides({
+
+        loaded: function(){
+            currentSlide( 1 );
+        },
+        playInterval: 10000,
+        width: 842,
+        height: 292
+    });
+    setTimeout(function(){
+        $("#slides").slides("play");
+    }, 5000);
+
     $(document).on('click', '.modal-btn', function(){
         $('#small-modal').arcticmodal();
-    });
-
-    $("form.inline :text").minical({
-        inline: true
     });
 
     $('.link-toggle-js').on('click', function(e){
@@ -12,22 +21,10 @@ $(document).ready(function() {
         $(this).parent().find('.sub-menu-js').slideToggle().end().end().toggleClass('active');
     });
 
-    function dateWorks() {
-        $('.minical_day_12_16_2014').addClass('bg_yellow');
-        $('.minical_day_12_10_2014').addClass('bg_yellow');
-        $('.minical_day_12_9_2014').addClass('bg_green');
-        $('.minical_day_12_8_2014').addClass('bg_red');
-    }
-    dateWorks();
-
-    $('.minical_prev').on('click', function(){
-        $('.minical_day_12_16_2014').addClass('bg_yellow');
-        $('.minical_day_12_10_2014').addClass('bg_yellow');
-        $('.minical_day_12_9_2014').addClass('bg_green');
-        $('.minical_day_12_8_2014').addClass('bg_red');
-
-        dateWorks();
-    });
+    $('.minical_day_12_16_2014').addClass('bg_yellow');
+    $('.minical_day_12_10_2014').addClass('bg_yellow');
+    $('.minical_day_12_9_2014').addClass('bg_green');
+    $('.minical_day_12_8_2014').addClass('bg_red');
 
     var wrapPopupCalendar = $('.popup-calendar'),
         orderBox = $('.order-service-box');
