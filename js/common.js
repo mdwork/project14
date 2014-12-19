@@ -47,20 +47,15 @@ $(document).ready(function() {
         });
 
         $('.feedback').on('click', function(){
-            setTimeout(function(){
-                console.log($('.arcticmodal-container').length);
-                if($('.arcticmodal-container').length != 0) {
-                    console.log($('.arcticmodal-container').length);
-                    $('.arcticmodal-close').on('click', function(e){
-                        console.log('33333');
-                        e.preventDefault();
-                        wrapPopupCalendar.removeClass('display');
-                        orderBox.removeClass('display');
-                        bgPopupCalendar.height(0);
-                    });
-                }
-            }, 190);
-
+            setInterval(function(){
+                $('.arcticmodal-close, .arcticmodal-overlay, .arcticmodal-container').on('click', function(e){
+                    e.preventDefault();
+                    wrapPopupCalendar.removeClass('display');
+                    orderBox.removeClass('display');
+                    bgPopupCalendar.height(0);
+                    b
+                });
+            }, 50);
         });
     });
 
