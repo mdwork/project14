@@ -1547,7 +1547,8 @@ a:hover                        { text-decoration:underline; }
 }
 
 /* Рђ СЌС‚Рѕ РїСЂР°РІРёР»Р° РґР»СЏ СЃРєСЂРёРїС‚Р°:  */
-#slider {
+#slider,
+#slider2 {
     width: 250px;
 }
 
