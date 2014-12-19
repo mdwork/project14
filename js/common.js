@@ -47,15 +47,16 @@ $(document).ready(function() {
         });
 
         $('.feedback').on('click', function(){
-            setInterval(function(){
-                $('.arcticmodal-close, .arcticmodal-overlay, .arcticmodal-container').on('click', function(e){
+            function interval() {
+                $('.arcticmodal-close, .arcticmodal-overlay, .arcticmodal-container').on('click', function (e) {
                     e.preventDefault();
                     wrapPopupCalendar.removeClass('display');
                     orderBox.removeClass('display');
                     bgPopupCalendar.height(0);
-                    b
+                    clearInterval(intervalClose);
                 });
-            }, 50);
+            }
+            var intervalClose = setInterval(interval, 50);
         });
     });
 
