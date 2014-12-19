@@ -300,6 +300,7 @@ a:hover                        { text-decoration:underline; }
 .side-bar {
     overflow: hidden;
     width: 290px;
+    padding-bottom: 35px;
     background: #F4FAFD;
 }
     .side-bar section {
@@ -410,7 +411,7 @@ a:hover                        { text-decoration:underline; }
     overflow: hidden;
     float: right;
     width: 842px;
-    padding: 0 0 70px 28px;
+    padding: 0 0 195px 28px;
     background: #fff;
 }
     .main-content p {

@@ -48,7 +48,7 @@
                 </div><!--end CREDIT-BOX-->
 
                 <ul class="call-back-box">
-                    <li><button class="btn btn-call-back">Обратный звонок</button></li>
+                    <li><button class="btn btn-call-back modal-btn">Обратный звонок</button></li>
                     <li class="info">Работаем: <strong>Пн-Пт 9:00-18:00</strong></li>
                 </ul>
             </div><!--end CONTENT-->
@@ -122,7 +122,7 @@
                                 и промывке существующих скважин, <a href="#">монтажу и подключению</a> канализации, разводке водоснабжения
                                 и канализации в доме, установке тепловых насосов, монтажу любых систем.</p>
 
-                            <button class="btn btn-big">Заказать бурение скважины на воду</button>
+                            <button class="btn btn-big modal-btn">Заказать бурение скважины на воду</button>
 
                             <p>Компактные размеры буровых установок позволяют проехать на любое место участка, не повреждая
                                 ландшафта, и занимают небольшую площадь для выполняемых работ. Сегодня употребляются лишь
@@ -277,7 +277,7 @@
                                 <li><a href="#">Установка сетчатого фильтра;</a></li>
                             </ul>
 
-                            <button class="btn btn-big btn-icon">Отправить запрос на бурение скважины</button>
+                            <button class="btn btn-big btn-icon modal-btn">Отправить запрос на бурение скважины</button>
 
                             <ul class="list-benefits">
                                 <li class="first">
@@ -535,7 +535,7 @@
                     <span>+7 (812)</span> 233-54-77
                 </li>
 
-                <li><button class="btn btn-call-back">Обратный звонок</button></li>
+                <li><button class="btn btn-call-back modal-btn">Обратный звонок</button></li>
             </ul>
 
             <ul class="list-service-footer">
@@ -647,6 +647,72 @@
         </section>
     </div>
 
+    <div style="display: none;">
+        <div class="box-modal" id="small-modal">
+            <div class="modal-close arcticmodal-close">x</div>
+
+            <form class="callback-form" name="callback" action="">
+                <fieldset>
+                    <legend class="header-form">Заказать услугу</legend>
+
+                    <ul class="content-form">
+                        <li>
+                            <label>
+                                <span class="name">Ваше имя<span class="star">*</span>:</span>
+                                <input class="input-text" type="text" name="name" value="">
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="name">Телефон<span class="star">*</span>:</span>
+                                <input class="input-text" type="tel" name="tell" value="">
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="name">E-mail:</span>
+                                <input class="input-text" type="email" name="email" value="">
+                            </label>
+                        </li>
+
+                        <li class="overflow">
+                            <span class="name">Удобное время для звонка:</span>
+
+                            <div class="formCost">
+                                <label for="minCost">От</label> <input type="text" id="minCost2" name="time-from" value="0:00"/>
+                                <label for="maxCost">До</label> <input type="text" id="maxCost2" name="time-to" value="24:00"/>
+                            </div>
+                            <div class="sliderCont">
+                                <span class="slider-cont-time">00:00</span>
+                                <span class="slider-cont-time float-r">24:00</span>
+                                <div id="slider2"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="name">Комментарий:</span>
+                                <textarea name="comment"></textarea>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="hidden" name="bot-field" value="">
+                        </li>
+                    </ul>
+
+                    <footer class="footer-form">
+                        <aside class="note-form"><span class="star">*</span>- поля обязательны для заполнения</aside>
+                        <button class="btn btn-gray btn-cancel">Отменить</button>
+                        <button class="btn feedback">Отправить</button>
+                    </footer>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 
     <script type="text/javascript" src="js/ga.js"></script>
@@ -661,6 +727,14 @@
     <script type="text/javascript" src="feedback/js/jquery.jgrowl.js"></script>
     <script type="text/javascript" src="feedback/js/jquery.arcticmodal.js"></script>
     <script type="text/javascript" src="feedback/js/feedback.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(document).on('click', '.modal-btn', function(){
+                $('#small-modal').arcticmodal();
+            });
+        });
+    </script>
+
     <script src="js/slides.js"></script>
 </body>
 </html>
