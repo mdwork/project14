@@ -60,6 +60,10 @@ $(document).ready(function() {
         });
     });
 
+    $('.modal-btn').on('click', function(e){
+        e.preventDefault();
+    });
+
     $('.green-day, .yellow-day').on('click', function(e){
         e.preventDefault();
         bgPopupCalendar.addClass('display');
