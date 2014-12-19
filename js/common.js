@@ -39,14 +39,28 @@ $(document).ready(function() {
         wrapPopupCalendar.css({'left': $(this).offset().left + 35,
             'top': $(this).offset().top}).addClass('display');
 
-        $('body, .btn-cancel').on('click', function(e){
+        $('.arcticmodal-close, .btn-cancel').on('click', function(e){
             e.preventDefault();
             wrapPopupCalendar.removeClass('display');
             orderBox.removeClass('display');
             bgPopupCalendar.height(0);
         });
-        wrapPopupCalendar.on('click', function(e) {
-            e.stopPropagation();
+
+        $('.feedback').on('click', function(){
+            setTimeout(function(){
+                console.log($('.arcticmodal-container').length);
+                if($('.arcticmodal-container').length != 0) {
+                    console.log($('.arcticmodal-container').length);
+                    $('.arcticmodal-close').on('click', function(e){
+                        console.log('33333');
+                        e.preventDefault();
+                        wrapPopupCalendar.removeClass('display');
+                        orderBox.removeClass('display');
+                        bgPopupCalendar.height(0);
+                    });
+                }
+            }, 190);
+
         });
     });
 
