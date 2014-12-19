@@ -4,7 +4,7 @@
   date_tools = {
     getMonthName: function(date) {
       var months;
-      months = ["Январь,", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+      months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
       return months[date.getMonth()];
     },
     getDayClass: function(date) {
@@ -29,7 +29,7 @@
     },
     dayHeader: function() {
       var $tr, day, days, _i, _len;
-      days = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
+      days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
       $tr = $("<tr />");
       for (_i = 0, _len = days.length; _i < _len; _i++) {
         day = days[_i];
@@ -42,7 +42,7 @@
       $li = $("<li />", {
         "class": "minical_" + (date_tools.getMonthName(date).toLowerCase())
       });
-      $li.html("<article> <header> <span>" + (date_tools.getMonthName(date)) + " " + (date.getFullYear()) + "</span> <a href='#' class='minical_prev'></a> <a href='#' class='minical_next'></a> </header> <section> <table> <thead> <tr> </tr> </thead> <tbody> </tbody> </table> </section> </article>");
+      $li.html("<article> <header> <h1>" + (date_tools.getMonthName(date)) + " " + (date.getFullYear()) + "</h1> <a href='#' class='minical_prev'></a> <a href='#' class='minical_next'></a> </header> <section> <table> <thead> <tr> </tr> </thead> <tbody> </tbody> </table> </section> </article>");
       $li.find('thead').append(this.dayHeader());
       return $li;
     }
