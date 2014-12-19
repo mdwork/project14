@@ -1425,6 +1425,14 @@ a:hover                        { text-decoration:underline; }
 }
 
 .bg-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    z-index: 999;
+}
+.overview {
     display: block;
     position: absolute;
     top: 0;

@@ -34,16 +34,28 @@ $(document).ready(function() {
 
     var wrapPopupCalendar = $('.popup-calendar'),
         orderBox = $('.order-service-box'),
-        bgPopupCalendar = $('.bg-popup');
+        bgPopupCalendar = $('.bg-popup'),
+        overviewPopup = $('.overview');
+
+    $('.green-day, .yellow-day').on('click', function(e){
+        e.preventDefault();
+        bgPopupCalendar.addClass('display');
+        orderBox.addClass('display');
+        overviewPopup.height($(document).height());
+    });
+
     $('.bg_yellow, .bg_green').on('click', function(){
         wrapPopupCalendar.css({'left': $(this).offset().left + 35,
-            'top': $(this).offset().top}).addClass('display');
+                                'top': $(this).offset().top}).addClass('display');
+        overviewPopup.addClass('display');
+        bgPopupCalendar.addClass('display');
 
-        $('.arcticmodal-close, .btn-cancel').on('click', function(e){
+        $('.arcticmodal-close, .btn-cancel, .overview').on('click', function(e){
             e.preventDefault();
             wrapPopupCalendar.removeClass('display');
             orderBox.removeClass('display');
-            bgPopupCalendar.height(0);
+            overviewPopup.removeClass('display').height(0);
+            bgPopupCalendar.removeClass('display');
         });
 
         $('.feedback').on('click', function(){
@@ -52,7 +64,8 @@ $(document).ready(function() {
                     e.preventDefault();
                     wrapPopupCalendar.removeClass('display');
                     orderBox.removeClass('display');
-                    bgPopupCalendar.height(0);
+                    bgPopupCalendar.removeClass('display');
+                    overviewPopup.removeClass('display').height(0);
                     clearInterval(intervalClose);
                 });
             }
@@ -62,13 +75,6 @@ $(document).ready(function() {
 
     $('.modal-btn').on('click', function(e){
         e.preventDefault();
-    });
-
-    $('.green-day, .yellow-day').on('click', function(e){
-        e.preventDefault();
-        bgPopupCalendar.addClass('display');
-        orderBox.addClass('display');
-        bgPopupCalendar.height($(document).height());
     });
 
     function sliderPolzunok(nameSlider, minTime, maxTime){
@@ -98,7 +104,6 @@ $(document).ready(function() {
             }
             nameSlider.slider("values",0,value1);
         });
-
 
         maxTime.change(function(){
             var value1=minTime.val();
