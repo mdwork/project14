@@ -773,7 +773,8 @@ a:hover                        { text-decoration:underline; }
                     box-sizing: border-box;
                 }
                 .content-form .input-text:focus,
-                .content-form textarea:focus {
+                .content-form textarea:focus,
+                .formCost input[type="text"]:focus {
                     -webkit-box-shadow: 0 0 2px 0 rgba(193, 215, 220, 1);
                     -moz-box-shadow: 0 0 2px 0 rgba(193, 215, 220, 1);
                     box-shadow: 0 0 2px 0 rgba(193, 215, 220, 1);
@@ -1493,6 +1494,10 @@ a:hover                        { text-decoration:underline; }
     width: 345px;
     background: #FFFFFF;
 }
+.box-modal .callback-form {
+    width: 100%;
+    background: #F4FAFD;
+}
     .popup-calendar .header-form {
         font-size: 22px;
         line-height: 39px;
@@ -1501,12 +1506,24 @@ a:hover                        { text-decoration:underline; }
         -moz-box-shadow: inset 0 3px 7px -4px rgba(0, 0, 0, 0.8);
         box-shadow: inset 0 3px 7px -4px rgba(0, 0, 0, 0.8);
     }
+
     .callback-form .content-form {
         margin: 15px 40px 17px;
     }
+    .box-modal .callback-form .content-form {
+        margin: 26px 40px 17px;
+    }
+        .wdt-modal-input {
+            width: 254px;
+        }
+
     .callback-form .footer-form {
         margin: 17px 40px 27px;
     }
+    .box-modal .callback-form .footer-form {
+        margin: 17px 40px 31px;
+    }
+
 /*polzunok*/
 .formCost {
     float: left;
@@ -1521,13 +1538,12 @@ a:hover                        { text-decoration:underline; }
 }
 .formCost input {
     float: left;
-    text-align: right;
     color: #6f6f6f;
     font: 400 14px Arial, sans-serif;
     width: 64px;
     height: 16px;
     padding: 8px 0 5px;
-    background: none;
+    background: #FFFFFF;
     border: 1px solid #E5E5E5;
     margin-right: 20px;
     text-align: center;
@@ -1551,6 +1567,10 @@ a:hover                        { text-decoration:underline; }
 #slider,
 #slider2 {
     width: 250px;
+}
+.box-modal #slider,
+.box-modal #slider2 {
+    width: 245px;
 }
 
 .ui-slider {

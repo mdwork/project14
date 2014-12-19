@@ -48,7 +48,7 @@
                 </div><!--end CREDIT-BOX-->
 
                 <ul class="call-back-box">
-                    <li><button class="btn btn-call-back">Обратный звонок</button></li>
+                    <li><button class="btn btn-call-back modal-btn">Обратный звонок</button></li>
                     <li class="info">Работаем: <strong>Пн-Пт 9:00-18:00</strong></li>
                 </ul>
             </div><!--end CONTENT-->
@@ -225,7 +225,7 @@
                     <span>+7 (812)</span> 233-54-77
                 </li>
 
-                <li><button class="btn btn-call-back">Обратный звонок</button></li>
+                <li><button class="btn btn-call-back modal-btn">Обратный звонок</button></li>
             </ul>
 
             <ul class="list-service-footer">
@@ -256,6 +256,72 @@
             </div>
         </div><!--end CONTENT-->
     </footer>
+
+    <div style="display: none;">
+        <div class="box-modal" id="small-modal">
+            <span class="modal-close arcticmodal-close"></span>
+
+            <form class="callback-form" name="callback" action="">
+                <fieldset>
+                    <legend class="header-form">Обратный звонок</legend>
+
+                    <ul class="content-form">
+                        <li class="wdt-modal-input">
+                            <label>
+                                <span class="name">Ваше имя<span class="star">*</span>:</span>
+                                <input class="input-text" type="text" name="name" value="">
+                            </label>
+                        </li>
+
+                        <li class="wdt-modal-input">
+                            <label>
+                                <span class="name">Телефон<span class="star">*</span>:</span>
+                                <input class="input-text" type="tel" name="tell" value="">
+                            </label>
+                        </li>
+
+                        <li class="wdt-modal-input">
+                            <label>
+                                <span class="name">E-mail:</span>
+                                <input class="input-text" type="email" name="email" value="">
+                            </label>
+                        </li>
+
+                        <li class="overflow wdt-modal-input">
+                            <span class="name">Удобное время для звонка:</span>
+
+                            <div class="formCost">
+                                <label for="minCost2">От</label> <input type="text" id="minCost2" name="time-from" value="0:00"/>
+                                <label for="maxCost2">До</label> <input type="text" id="maxCost2" name="time-to" value="24:00"/>
+                            </div>
+                            <div class="sliderCont">
+                                <span class="slider-cont-time">00:00</span>
+                                <span class="slider-cont-time float-r">24:00</span>
+                                <div id="slider2"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="name">Комментарий:</span>
+                                <textarea name="comment"></textarea>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="hidden" name="bot-field" value="">
+                        </li>
+                    </ul>
+
+                    <footer class="footer-form">
+                        <aside class="note-form"><span class="star">*</span>- поля обязательны для заполнения</aside>
+                        <button class="btn btn-gray btn-cancel">Отменить</button>
+                        <button class="btn feedback">Отправить</button>
+                    </footer>
+                </fieldset>
+            </form>
+        </div>
+    </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 
