@@ -67,44 +67,56 @@ $(document).ready(function() {
         bgPopupCalendar.height($(document).height());
     });
 
-    $("#slider").slider({
-        min: 0,
-        max: 24,
-        values: [0,24],
-        range: true,
-        stop: function(event, ui) {
-            $("input#minCost").val($("#slider").slider("values",0) + ':00');
-            $("input#maxCost").val($("#slider").slider("values",1) + ':00');
+    function sliderPolzunok(nameSlider, minTime, maxTime){
+        nameSlider.slider({
+            min: 0,
+            max: 24,
+            values: [0,24],
+            range: true,
+            stop: function(event, ui) {
+                minTime.val(nameSlider.slider("values",0) + ':00');
+                maxTime.val(nameSlider.slider("values",1) + ':00');
 
-        },
-        slide: function(event, ui){
-            $("input#minCost").val($("#slider").slider("values",0) + ':00');
-            $("input#maxCost").val($("#slider").slider("values",1) + ':00');
-        }
-    });
+            },
+            slide: function(event, ui){
+                minTime.val(nameSlider.slider("values",0) + ':00');
+                maxTime.val(nameSlider.slider("values",1) + ':00');
+            }
+        });
 
-    jQuery("input#minCost").change(function(){
-        var value1=jQuery("input#minCost").val();
-        var value2=jQuery("input#maxCost").val();
+        minTime.change(function(){
+            var value1=minTime.val();
+            var value2=maxTime.val();
 
-        if(parseInt(value1) > parseInt(value2)){
-            value1 = value2;
-            jQuery("input#minCost").val(value1);
-        }
-        jQuery("#slider").slider("values",0,value1);
-    });
+            if(parseInt(value1) > parseInt(value2)){
+                value1 = value2;
+                minTime.val(value1);
+            }
+            nameSlider.slider("values",0,value1);
+        });
 
 
-    jQuery("input#maxCost").change(function(){
-        var value1=jQuery("input#minCost").val();
-        var value2=jQuery("input#maxCost").val();
+        maxTime.change(function(){
+            var value1=minTime.val();
+            var value2=maxTime.val();
 
-        if (value2 > 24) { value2 = 24; jQuery("input#maxCost").val('24:00')}
+            if (value2 > 24) { value2 = 24; maxTime.val('24:00')}
 
-        if(parseInt(value1) > parseInt(value2)){
-            value2 = value1;
-            jQuery("input#maxCost").val(value2);
-        }
-        jQuery("#slider").slider("values",1,value2);
-    });
+            if(parseInt(value1) > parseInt(value2)){
+                value2 = value1;
+                maxTime.val(value2);
+            }
+            nameSlider.slider("values",1,value2);
+        });
+    }
+
+    var slider1 = $("#slider"),
+        slider2 = $("#slider2"),
+        minTime1 = jQuery("input#minCost"),
+        minTime2 = jQuery("input#minCost2"),
+        maxTime1 = jQuery("input#maxCost"),
+        maxTime2 = jQuery("input#maxCost2");
+
+    sliderPolzunok(slider1, minTime1, maxTime1);
+    sliderPolzunok(slider2, minTime2, maxTime2);
 });
