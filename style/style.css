@@ -416,7 +416,6 @@ a:hover                        { text-decoration:underline; }
 }
     .main-content p {
         margin-bottom: 20px;
-        text-indent: 20px;
     }
     .main-content a {
         text-decoration: underline;
@@ -478,7 +477,7 @@ a:hover                        { text-decoration:underline; }
                 top: 55px;
                 left: 55px;
                 width: 504px;
-                height: 175px;
+                min-height: 155px;
                 padding: 15px 14px;
                 -moz-box-sizing: border-box;
                 -webkit-box-sizing: border-box;
