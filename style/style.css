@@ -478,12 +478,13 @@ a:hover                        { text-decoration:underline; }
                 top: 55px;
                 left: 55px;
                 width: 504px;
-                height: 158px;
+                height: 175px;
                 padding: 15px 14px;
                 -moz-box-sizing: border-box;
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
                 background: url("../images/content/slider/bg_text_slider.png") no-repeat center;
+                background-size: 100% 100%;
             }
                 .box-slider .block-text h3 {
                     margin-bottom: 10px;
@@ -1162,6 +1163,9 @@ a:hover                        { text-decoration:underline; }
                             }
             .wrap-link-map {
                 display: block;
+                width: 183px;
+                margin: 0 auto;
+                margin-bottom: 15px;
                 padding: 2px 5px 2px 60px;
                 border: 1px dashed #E66802;
                 background: url("../images/sideBar/service/map_icon.png") #fff no-repeat 20px center;
@@ -1321,6 +1325,9 @@ a:hover                        { text-decoration:underline; }
 .box-hide {
     display: none;
 }
+.active + .box-hide {
+    display: block;
+}
 .bg_green {
     background: #9CCC5D;
 }
@@ -1329,6 +1336,11 @@ a:hover                        { text-decoration:underline; }
 }
 .bg_red {
     background: #EE4A4A;
+}
+.minical_day.bg_red,
+.minical_day.bg_red a,
+.list-period-day .red-day {
+    cursor: default;
 }
 /*map*/
 .map {
@@ -1451,6 +1463,25 @@ a:hover                        { text-decoration:underline; }
     -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
 }
+    .calendar-close {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 5px;
+        font: 700 20px Arial, sans-serif;
+        color: #C4D1D3;
+        cursor: pointer;
+
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+    .calendar-close:hover {
+        color: #DCE5E7;
+    }
     .choose-period-day {
         padding: 10px 0 20px;
         text-align: center;
@@ -1473,10 +1504,6 @@ a:hover                        { text-decoration:underline; }
             .red-day {
                 background: #EE4A4A;
                 border: 1px solid #EE4A4A;
-            }
-            .red-day:hover {
-                background: #F67676;
-                border-color: #CA3C3C;
             }
             .green-day {
                 background: #9CCC5D;
