@@ -120,7 +120,7 @@ function feedback(vars) {
                       if(/modal/i.test(cfg.notify)) {
                           var m = $('<div class="box-modal" id="feedback-modal-box" />');
                           m.html($inf);
-                          m.prepend('<div class="modal-close arcticmodal-close">X</div>');
+                          m.prepend('<div class="modal-close arcticmodal-close">&times;</div>');
                           $.arcticmodal({content: m});
                       }
                        //bt.replaceWith($inf);
