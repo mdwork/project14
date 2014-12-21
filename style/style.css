@@ -320,6 +320,7 @@ a:hover                        { text-decoration:underline; }
                     margin-bottom: 20px;
                 }
                 .content-side-bar.bord-bot li {
+                    margin-bottom: 15px;
                     border-bottom: 1px solid #D3DCE6;
                 }
                     .content-side-bar li img {
