@@ -8,6 +8,7 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
     <link rel="stylesheet" type="text/css" href="feedback/css/jquery.jgrowl.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery.fancybox.css?v=2.1.5" media="screen" />
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link href="style/jquery.minical.css" rel="stylesheet" type="text/css">
 </head>
@@ -303,12 +304,16 @@
                             </ul>
 
                             <ul class="list-fotoalbom">
-                                <li><img src="images/content/block_foto/foto1.jpg" alt="foto"></li>
-                                <li><img src="images/content/block_foto/foto2.jpg" alt="foto"></li>
-                                <li><img src="images/content/block_foto/foto3.jpg" alt="foto"></li>
-                                <li><img src="images/content/block_foto/foto4.jpg" alt="foto"></li>
-                                <li><img src="images/content/block_foto/foto5.jpg" alt="foto"></li>
-                                <li><img src="images/content/block_foto/foto6.jpg" alt="foto"></li>
+                                <!--описание:
+                                    <img src="images/content/block_foto/foto1.jpg" alt="reviews"> - первоначальная фотография;
+                                    <a class="fancybox" href="images/content/block_foto/foto1.jpg" data-fancybox-group="gallery"> - здесь href - это путь на новую картинку
+                                -->
+                                <li><a class="fancybox" href="images/content/block_foto/foto1.jpg" data-fancybox-group="gallery"><img src="images/content/block_foto/foto1.jpg" alt="foto"></a></li>
+                                <li><a class="fancybox" href="images/content/block_foto/foto2.jpg" data-fancybox-group="gallery"><img src="images/content/block_foto/foto2.jpg" alt="foto"></a></li>
+                                <li><a class="fancybox" href="images/content/block_foto/foto3.jpg" data-fancybox-group="gallery"><img src="images/content/block_foto/foto3.jpg" alt="foto"></a></li>
+                                <li><a class="fancybox" href="images/content/block_foto/foto4.jpg" data-fancybox-group="gallery"><img src="images/content/block_foto/foto4.jpg" alt="foto"></a></li>
+                                <li><a class="fancybox" href="images/content/block_foto/foto5.jpg" data-fancybox-group="gallery"><img src="images/content/block_foto/foto5.jpg" alt="foto"></a></li>
+                                <li><a class="fancybox" href="images/content/block_foto/foto6.jpg" data-fancybox-group="gallery"><img src="images/content/block_foto/foto6.jpg" alt="foto"></a></li>
                             </ul>
 
                             <ul class="list-video">
@@ -720,5 +725,6 @@
     <script type="text/javascript" src="feedback/js/feedback.js"></script>
 
     <script src="js/slides.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
 </body>
 </html>
