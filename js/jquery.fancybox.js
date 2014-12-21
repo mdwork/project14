@@ -1515,7 +1515,7 @@
 				viewport = F.getViewport();
 
 			if (!orig && current.isDom && element.is(':visible')) {
-				orig = element.parent().parent().find('img:first');
+				orig = element.find('img:first');
 
 				if (!orig.length) {
 					orig = element;
