@@ -8,6 +8,7 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
     <link rel="stylesheet" type="text/css" href="feedback/css/jquery.jgrowl.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery.fancybox.css?v=2.1.5" media="screen" />
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link href="style/jquery.minical.css" rel="stylesheet" type="text/css">
 </head>
@@ -158,6 +159,16 @@
                                 </li>
                             </ul>
                         </section>
+
+                        <p>
+                            <a class="fancybox" href="images/1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/1_s.jpg" alt="" /></a>
+
+                            <a class="fancybox" href="images/2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="images/2_s.jpg" alt="" /></a>
+
+                            <a class="fancybox" href="images/3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="images/3_s.jpg" alt="" /></a>
+
+                            <a class="fancybox" href="images/4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="images/4_s.jpg" alt="" /></a>
+                        </p>
                     </main>
                 </div>
 
@@ -390,14 +401,7 @@
     <script type="text/javascript" src="feedback/js/jquery.jgrowl.js"></script>
     <script type="text/javascript" src="feedback/js/jquery.arcticmodal.js"></script>
     <script type="text/javascript" src="feedback/js/feedback.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(document).on('click', '.modal-btn', function(){
-                $('#small-modal').arcticmodal();
-            });
-        });
-    </script>
-
     <script src="js/slides.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
 </body>
 </html>

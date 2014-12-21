@@ -128,4 +128,6 @@ $(document).ready(function() {
 
     sliderPolzunok(slider1, minTime1, maxTime1);
     sliderPolzunok(slider2, minTime2, maxTime2);
+
+    $('.fancybox').fancybox();
 });
