@@ -1512,14 +1512,6 @@ a:hover                        { text-decoration:underline; }
                 background: #ACD774;
                 border-color: #76AB30;
             }
-            .yellow-day {
-                background: #FFF99A;
-                border: 1px solid #FFF99A;
-            }
-            .yellow-day:hover {
-                background: #EDEDAE;
-                border-color: #D0CA6B;
-            }
         .order-service-box {
             display: none;
         }
