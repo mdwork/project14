@@ -109,7 +109,7 @@ a:hover                        { text-decoration:underline; }
 .heating-page {
     background: url("../images/bg_water_heating.png") #ED6E07 no-repeat top center;
 }
-.water-treatment {
+.water-treatment-page {
     background: url("../images/bg_water_treatment.png") #62CCF6 no-repeat top center;
 }
 .wrapper {
@@ -1137,7 +1137,7 @@ a:hover                        { text-decoration:underline; }
                         height: 0;
                         border-left: 6px solid transparent;
                         border-right: 6px solid transparent;
-                        border-top: 6px solid red;
+                        border-top: 6px solid #4C3F35;
                         border-bottom: 0;
                     }
                     .drilling .link-toggle.active:before {
