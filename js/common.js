@@ -37,7 +37,7 @@ $(document).ready(function() {
         bgPopupCalendar = $('.bg-popup'),
         overviewPopup = $('.overview');
 
-    $('.green-day, .yellow-day').on('click', function(e){
+    $('.green-day').on('click', function(e){
         e.preventDefault();
         bgPopupCalendar.addClass('display');
         orderBox.addClass('display');
@@ -50,7 +50,7 @@ $(document).ready(function() {
         overviewPopup.addClass('display');
         bgPopupCalendar.addClass('display');
 
-        $('.arcticmodal-close, .btn-cancel, .overview').on('click', function(e){
+        $('.arcticmodal-close, .btn-cancel, .overview, .calendar-close').on('click', function(e){
             e.preventDefault();
             wrapPopupCalendar.removeClass('display');
             orderBox.removeClass('display');

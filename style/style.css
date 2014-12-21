@@ -315,9 +315,6 @@ a:hover                        { text-decoration:underline; }
         .content-side-bar {
             padding: 0 20px 20px;
         }
-            .content-side-bar ul {
-                margin-bottom: 16px;
-            }
                 .list-box-action li {
                     position: relative;
                     margin-bottom: 20px;
@@ -1147,7 +1144,8 @@ a:hover                        { text-decoration:underline; }
                         border-top: 6px solid #4C3F35;
                     }
                     .sub-menu-service {
-                        margin: 20px 0
+                        overflow: hidden;
+                        margin: 20px 0;
                     }
                         .sub-menu-service li {
                             margin-bottom: 10px;
@@ -1323,9 +1321,6 @@ a:hover                        { text-decoration:underline; }
 }
 .box-hide {
     display: none;
-}
-.active + .box-hide {
-    display: block;
 }
 .bg_green {
     background: #9CCC5D;
