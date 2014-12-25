@@ -32,44 +32,46 @@ $(document).ready(function() {
     $('.minical_day_12_9_2014').addClass('bg_green');
     $('.minical_day_12_8_2014').addClass('bg_red');
 
-    var wrapPopupCalendar = $('.popup-calendar'),
-        orderBox = $('.order-service-box'),
-        bgPopupCalendar = $('.bg-popup'),
-        overviewPopup = $('.overview');
+    $("#calendar-js").load("calendar.html #calendar-ajax", function(){
+        var wrapPopupCalendar = $('.popup-calendar'),
+            orderBox = $('.order-service-box'),
+            bgPopupCalendar = $('.bg-popup'),
+            overviewPopup = $('.overview');
 
-    $('.green-day').on('click', function(e){
-        e.preventDefault();
-        bgPopupCalendar.addClass('display');
-        orderBox.addClass('display');
-        overviewPopup.height($(document).height());
-    });
-
-    $('.bg_yellow, .bg_green').on('click', function(){
-        wrapPopupCalendar.css({'left': $(this).offset().left + 35,
-                                'top': $(this).offset().top}).addClass('display');
-        overviewPopup.addClass('display');
-        bgPopupCalendar.addClass('display');
-
-        $('.arcticmodal-close, .btn-cancel, .overview, .calendar-close').on('click', function(e){
+        $('.green-day').on('click', function(e){
             e.preventDefault();
-            wrapPopupCalendar.removeClass('display');
-            orderBox.removeClass('display');
-            overviewPopup.removeClass('display').height(0);
-            bgPopupCalendar.removeClass('display');
+            bgPopupCalendar.addClass('display');
+            orderBox.addClass('display');
+            overviewPopup.height($(document).height());
         });
 
-        $('.feedback').on('click', function(){
-            function interval() {
-                $('.arcticmodal-close, .arcticmodal-overlay, .arcticmodal-container').on('click', function (e) {
-                    e.preventDefault();
-                    wrapPopupCalendar.removeClass('display');
-                    orderBox.removeClass('display');
-                    bgPopupCalendar.removeClass('display');
-                    overviewPopup.removeClass('display').height(0);
-                    clearInterval(intervalClose);
-                });
-            }
-            var intervalClose = setInterval(interval, 50);
+        $('.bg_yellow, .bg_green').on('click', function(){
+            wrapPopupCalendar.css({'left': $(this).offset().left + 35,
+                                    'top': $(this).offset().top}).addClass('display');
+            overviewPopup.addClass('display');
+            bgPopupCalendar.addClass('display');
+
+            $('.arcticmodal-close, .btn-cancel, .overview, .calendar-close').on('click', function(e){
+                e.preventDefault();
+                wrapPopupCalendar.removeClass('display');
+                orderBox.removeClass('display');
+                overviewPopup.removeClass('display').height(0);
+                bgPopupCalendar.removeClass('display');
+            });
+
+            $('.feedback').on('click', function(){
+                function interval() {
+                    $('.arcticmodal-close, .arcticmodal-overlay, .arcticmodal-container').on('click', function (e) {
+                        e.preventDefault();
+                        wrapPopupCalendar.removeClass('display');
+                        orderBox.removeClass('display');
+                        bgPopupCalendar.removeClass('display');
+                        overviewPopup.removeClass('display').height(0);
+                        clearInterval(intervalClose);
+                    });
+                }
+                var intervalClose = setInterval(interval, 50);
+            });
         });
     });
 
