@@ -121,15 +121,22 @@ $(document).ready(function() {
         });
     }
 
-    var slider1 = $("#slider"),
-        slider2 = $("#slider2"),
-        minTime1 = jQuery("input#minCost"),
-        minTime2 = jQuery("input#minCost2"),
-        maxTime1 = jQuery("input#maxCost"),
-        maxTime2 = jQuery("input#maxCost2");
+    function polzunokCheck(){
+        var slider1 = $("#slider"),
+            slider2 = $("#slider2"),
+            minTime1 = jQuery("input#minCost"),
+            minTime2 = jQuery("input#minCost2"),
+            maxTime1 = jQuery("input#maxCost"),
+            maxTime2 = jQuery("input#maxCost2");
+        
+        if(slider1.length != 0 && slider2.length != 0) {
+            sliderPolzunok(slider1, minTime1, maxTime1);
+            sliderPolzunok(slider2, minTime2, maxTime2);
+            clearInterval(ClearPolzunokCheck);
+        }
+    }
+    var ClearPolzunokCheck = setInterval(polzunokCheck, 50);
 
-    sliderPolzunok(slider1, minTime1, maxTime1);
-    sliderPolzunok(slider2, minTime2, maxTime2);
 
     $('.fancybox').fancybox();
 
