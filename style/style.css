@@ -483,7 +483,7 @@ a:hover                        { text-decoration:underline; }
                 background: url("../images/content/slider/bg_text_slider.png") no-repeat center;
                 background-size: 100% 100%;
             }
-                .box-slider .block-text h3 {
+                .box-slider .block-text span {
                     margin-bottom: 9px;
                     color: #104773;
                     font: 24px 'DinDisplayPro-bold', sans-serif;
@@ -503,7 +503,8 @@ a:hover                        { text-decoration:underline; }
             border-bottom: 2px solid #DCE5E7;
         }
             .header-section h1,
-            .header-section h2 {
+            .header-section h2,
+            .header-section span {
                 font: 30px 'DinDisplayPro-reg', sans-serif;
             }
         .sub-header {
