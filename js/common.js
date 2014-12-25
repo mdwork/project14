@@ -130,4 +130,6 @@ $(document).ready(function() {
     sliderPolzunok(slider2, minTime2, maxTime2);
 
     $('.fancybox').fancybox();
+
+    $("#wrap-form-js").load("form.html #form-ajax");
 });
