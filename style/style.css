@@ -306,7 +306,8 @@ a:hover                        { text-decoration:underline; }
     .side-bar section {
         margin-bottom: 15px;
     }
-        .header-section-side-bar h2 {
+        .header-section-side-bar span {
+            display: block;
             padding: 8px 20px;
             margin-bottom: 30px;
             background: #DCE5E7;
@@ -844,7 +845,7 @@ a:hover                        { text-decoration:underline; }
         h2.sub-header-content {
             font-size: 22px;
         }
-        h3.sub-header-content {
+        .sub-header-content-2 {
             font-size: 18px;
         }
         h4.sub-header-content {
@@ -1074,6 +1075,9 @@ a:hover                        { text-decoration:underline; }
         }
         .list-service-sidebar .content-side-bar {
             padding-bottom: 0;
+        }
+        .header-service {
+            display: block;
         }
             .header-service a {
                 display: block;
