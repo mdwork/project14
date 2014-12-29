@@ -837,18 +837,20 @@ a:hover                        { text-decoration:underline; }
             margin-bottom: 20px;
             font-size: 18px;
         }
-        .sub-header-content {
+        .sub-header-content h2,
+        .sub-header-content h3,
+        .sub-header-content h4 {
             margin-bottom: 10px;
             color: #104773;
             font-weight: 400;
         }
-        h2.sub-header-content {
+        .sub-header-content h2 {
             font-size: 22px;
         }
         .sub-header-content-2 {
             font-size: 18px;
         }
-        h4.sub-header-content {
+        .sub-header-content h4 {
             font-size: 16px;
         }
         .banner-content {
